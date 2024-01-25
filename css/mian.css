@@ -649,20 +649,15 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-#event_box span {
+    font-size: 16px;
     font-family: "맑은고딕";
-    position: relative;
 }
 
-#event_box,
-span:hover {}
 
-#event_box span:hover {
-    color: black;
-    cursor: pointer;
-}
+
+#event_box:hover{background-color: #ffffff; color: black;cursor: pointer;}
+
+
 
 /* Instagram 인스타그램 */
 
