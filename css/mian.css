@@ -1,0 +1,683 @@
+@font-face {
+    font-family: 'TheJamsil5Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    color: #ffffff;
+}
+
+
+li,
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: black;
+    font-size: 16px;
+
+    font-family: 'TheJamsil5Bold';
+    font-family: 100;
+}
+
+
+
+/* ALL */
+
+.hamburger .line {
+    width: 20px;
+    height: 2px;
+    background-color: #ecf0f1;
+    display: block;
+    margin: 8px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger:hover {
+    cursor: pointer;
+}
+
+/* ONE */
+
+
+
+#hamburger-1.is-active .line:nth-child(1) {
+    -webkit-transform: translateY(13px) rotate(45deg);
+    -ms-transform: translateY(13px) rotate(45deg);
+    -o-transform: translateY(13px) rotate(45deg);
+    transform: translateY(4px) rotate(45deg);
+}
+
+#hamburger-1.is-active .line:nth-child(2) {
+    -webkit-transform: translateY(-13px) rotate(-45deg);
+    -ms-transform: translateY(-13px) rotate(-45deg);
+    -o-transform: translateY(-13px) rotate(-45deg);
+    transform: translateY(-6px) rotate(-45deg);
+}
+
+
+/* header */
+
+header {
+    max-width: 1920px;
+    height: 1003px;
+
+}
+
+nav {
+    max-width: 1920px;
+    height: 69px;
+    background-color: black;
+    padding: 0 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#nav1 img {
+    width: 128px;
+    height: 40px;
+    padding: 15px 5px;
+}
+
+#nav1 {
+    width: 542px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 10px;
+}
+
+#nav1 li {
+    color: #e4e4e4;
+}
+
+#nav1 li:hover {
+    cursor: pointer;
+}
+
+#nav2 {
+    width: 300px;
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between
+}
+
+#nav2 img {
+    width: 25px;
+    height: 25px;
+}
+
+#nav2 img:hover {
+    cursor: pointer;
+}
+
+#nav2 li {
+    color: #e4e4e4;
+    padding: 0 15px;
+    font-size: 15px;
+}
+
+#nav2 li:hover {
+    cursor: pointer;
+}
+
+
+.mainslider {
+    max-width: 1920px;
+    height: 883px;
+}
+
+.sliderlist {
+    width: 100%;
+}
+
+.sliderlist div {
+    width: 100%;
+    height: 883px;
+    float: left;
+}
+
+
+#button {
+    width: 308px;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    position: relative;
+    left: 800px;
+    top: -20px;
+    z-index: 10;
+}
+
+.buttonicon {
+    width: 8px;
+    height: 8px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    background: #ffffff66;
+    background-clip: padding-box;
+}
+
+.buttonicon:hover,
+.pix {
+    border: 2px solid #ffffff;
+    cursor: pointer;
+}
+
+.slide {
+    max-width: 1920px;
+    height: 883px;
+}
+
+.slide:not(:first-of-type) {
+    display: none
+}
+
+.mainslider1 {
+    background: url(../img/mainslider.jpg) no-repeat center/cover;
+}
+
+.mainslider2 {
+    background: url(../img/mainslider2.jpg) no-repeat center/cover;
+}
+
+.mainslider3 {
+    background: url(../img/mainslider3.jpg) no-repeat center/cover;
+}
+
+.mainslider4 {
+    background: url(../img/mainslider4.jpg) no-repeat center/cover;
+
+}
+
+.mainslider5 {
+    background: url(../img/mainslider5.jpg) no-repeat center/cover;
+}
+
+.mainslider6 {
+    background: url(../img/mainslider6.jpg) no-repeat center/cover;
+}
+
+.mainslider7 {
+    background: url(../img/mainslider7.jpg) no-repeat center/cover;
+}
+
+.mainslider8 {
+    background: url(../img/mainslider8.jpg) no-repeat center/cover;
+}
+
+.mainslider9 {
+    background: url(../img/mainslider9.jpg) no-repeat center/cover;
+}
+
+.mainslider10 {
+    background: url(../img/mainslider10.jpg) no-repeat center/cover;
+}
+
+
+.mainslider1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.sliderlist h2 {
+    position: absolute;
+    font-size: 72px;
+    color: #ffffff;
+    top: 140px;
+    left: 300px;
+    z-index: 3;
+
+
+}
+
+.sliderlist h3 {
+    position: absolute;
+    color: #ffffff;
+    top: 245px;
+    font-size: 28px;
+    left: 310px;
+    z-index: 3;
+}
+
+.sliderlist h4 {
+    position: absolute;
+    color: #ffffff;
+    top: 300px;
+    font-size: 25px;
+    left: 310px;
+    z-index: 3;
+}
+
+.mainp {
+    position: absolute;
+    top: 850px;
+    left: 310px;
+    font-size: 18px;
+    z-index: 3;
+}
+
+.mainp:hover {
+    cursor: pointer;
+    border-bottom: 1px solid #ffffff;
+}
+
+.mainp2 {
+    position: absolute;
+    top: 850px;
+    left: 470px;
+    font-size: 18px;
+    z-index: 3;
+}
+
+.mainp2:hover {
+    cursor: pointer;
+    border-bottom: 1px solid #ffffff;
+}
+
+
+
+.mainslider2::after,
+.mainslider10::after,
+.mainslider4::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    background-color: black;
+    opacity: 0.15;
+}
+
+.mainslider10::after {
+    opacity: 0.3;
+}
+
+.mainslider5::after {
+    opacity: 0.2;
+}
+
+/* Model */
+
+.model {
+    max-width: 1340px;
+    height: 984px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.modelbox {
+    width: 1340px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-end;
+    margin: 220px auto 40px;
+    background-color: black;
+}
+
+.modeltitle {
+    color: #ffffff;
+    font-size: 42px;
+    margin-bottom: 10px;
+
+}
+
+p {
+    color: #cccccc;
+    font-size: 15px;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+
+}
+
+#modelsearch {
+    background-color: black;
+    width: 300px;
+    height: 40px;
+    border: none;
+    padding: 0 4px;
+    font-size: 18px;
+}
+
+
+#modelsearch option {
+
+    color: #757575;
+}
+
+#modelsearch option:hover {
+    color: #ffffff;
+    background-color: black;
+}
+
+.modellist,
+.modellist2,
+.modellist3,
+.modellist4 {
+    width: 200%;
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+
+}
+
+
+
+.modelbox1 {
+    width: 16.66%;
+    height: 430px;
+
+    display: flex;
+    align-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 0px 20px;
+
+}
+
+.model .modelbox1 img {
+    width: 380px;
+    height: 160px;
+    margin: 40px auto;
+}
+
+.modellist .modelbox1 h3 {
+    font-size: 30px;
+    margin: 20px 30px 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.modelbutton {
+    width: 368px;
+    height: 56px;
+    border: 1px solid #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.modelbutton:hover {
+    background-color: #ffffff;
+    color: black;
+    cursor: pointer;
+
+}
+
+#button1 {
+    width: 308px;
+    height: 20px;
+    display: flex;
+    justify-content: space-around;
+    box-sizing: border-box;
+    position: relative;
+    left: 500px;
+    z-index: 10;
+    padding: 0 30px;
+}
+
+.buttonicon {
+    width: 8px;
+    height: 8px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    background: #ffffff66;
+    background-clip: padding-box;
+}
+
+.buttonicon:hover,
+.pix1 {
+    border: 2px solid #ffffff;
+    cursor: pointer;
+}
+
+/* iconmenu */
+
+.iconmenu {
+    max-width: 1920px;
+    height: 530px;
+
+
+}
+
+.imgbox {
+    width: 1340px;
+    height: 530px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgbox ul {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.imgbox ul li {
+    margin: 0 130px;
+}
+
+.imgbox ul li img {
+    width: 70px;
+    height: 70px;
+}
+
+.imgbox ul li img:hover {
+    cursor: pointer;
+}
+
+
+/* 수상 정보 */
+
+.awards {
+    max-width: 1920px;
+    height: 1200px;
+    background-image: url(../img/AWARDS.jpg);
+    background-position: 50% 100%;
+    background-size: 150%;
+    overflow: hidden;
+}
+
+
+.awardstitle {
+    width: 1340px;
+    height: 97px;
+    margin: 50px auto;
+    display: flex;
+    align-items: end;
+}
+
+.awardstitle p {
+    font-size: 36px;
+    color: #ffffff;
+}
+
+.awardsbox {
+    max-width: 1920px;
+    height: 719px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around
+}
+
+.awardslsts {
+    width: 660px;
+    height: 719px;
+
+    margin: 0 10px;
+}
+
+.awardslsts img {
+    width: 100%;
+    height: 396px;
+    margin-bottom: 30px;
+}
+
+.awardslsts span {
+    font-size: 16px;
+    color: #ffffff;
+    margin: 0px 30px;
+}
+
+.awardslsts p {
+    font-size: 24px;
+    color: #ffffff;
+    margin: 15px 20px 0 30px;
+}
+
+.awardslsts .awardstext {
+    font-size: 14px;
+    color: #cccccc;
+}
+
+/* subpage */
+
+.subpage {
+    max-width: 1920px;
+    height: 764px;
+    justify-content: space-between;
+    display: flex;
+}
+
+.subpagebox {
+    width: 920px;
+    height: 524px;
+    margin: 70px 0px 0 0px;
+}
+
+.subpagebox img {
+    width: 920px;
+    height: 524px;
+}
+
+.subpagebox::after {
+    opacity: 0.15;
+}
+
+.subpagebox p {
+    position: relative;
+    top: -500px;
+    font-size: 42px;
+    color: #ffffff;
+    margin: 20px 0;
+    left: 60px;
+
+}
+
+.subpagebox span {
+    font-size: 16px;
+    color: #ffffff;
+    position: relative;
+    top: -500px;
+    margin: 20px 0;
+    left: 60px;
+    font-family: "맑은고딕";
+}
+
+.subpagebox p a {
+    position: relative;
+    top: -10px;
+    left: px;
+    border-bottom: 2px solid #ffffff;
+    font-size: 16px;
+    font-family: "맑은고딕";
+}
+
+/* eventmenu */
+
+.eventmenu {
+    max-width: 1920px;
+    height: 1200px;
+
+}
+
+#event_img {
+    width: 100%;
+    height: 960px;
+}
+
+#event_img img {
+    width: 100%;
+    height: 960px;
+}
+
+#event_img p {
+    color: #ffffff;
+    position: relative;
+    top: -750px;
+    left: 200px;
+    margin: 50px 0;
+}
+
+#event_img p:nth-of-type(1) {
+    font-size: 54px;
+}
+
+#event_img p:nth-of-type(2) {
+    font-size: 26px;
+}
+
+#event_box {
+    width: 240px;
+    height: 56px;
+    border: 1px solid #ffffff;
+    position: relative;
+    top: -750px;
+    left: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#event_box span {
+    font-family: "맑은고딕";
+    position: relative;
+}
+
+#event_box,
+span:hover {}
+
+#event_box span:hover {
+    color: black;
+    cursor: pointer;
+}
+
+/* Instagram 인스타그램 */
+
+.Instagram {
+    max-width: 1920px;
+    height: 1053px;
+    background-color: brown;
+}
+
+/* content */
+
+.content {
+    max-width: 1920px;
+    height: 787px;
+    background-color: aquamarine;
+}
+
+/* footer */
