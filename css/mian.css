@@ -27,7 +27,7 @@ body {
     font-size: 16px;
 
     font-family: 'TheJamsil5Bold';
-    font-family: 100;
+  
 }
 
 
@@ -40,8 +40,8 @@ body {
     background-color: #ecf0f1;
     display: block;
     margin: 8px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
+   
+    
     transition: all 0.3s ease-in-out;
 }
 
@@ -54,16 +54,10 @@ body {
 
 
 #hamburger-1.is-active .line:nth-child(1) {
-    -webkit-transform: translateY(13px) rotate(45deg);
-    -ms-transform: translateY(13px) rotate(45deg);
-    -o-transform: translateY(13px) rotate(45deg);
     transform: translateY(4px) rotate(45deg);
 }
 
 #hamburger-1.is-active .line:nth-child(2) {
-    -webkit-transform: translateY(-13px) rotate(-45deg);
-    -ms-transform: translateY(-13px) rotate(-45deg);
-    -o-transform: translateY(-13px) rotate(-45deg);
     transform: translateY(-6px) rotate(-45deg);
 }
 
@@ -116,8 +110,9 @@ nav {
 }
 
 #nav2 img {
-    width: 25px;
-    height: 25px;
+    width: 22px;
+    height: 22px;
+    
 }
 
 #nav2 img:hover {
@@ -494,10 +489,11 @@ p {
 .awards {
     max-width: 1920px;
     height: 1200px;
-    background-image: url(../img/AWARDS.jpg);
+    background-image: url(../img/AWARDSFUL.png);
     background-position: 50% 100%;
     background-size: 150%;
     overflow: hidden;
+    position: relative;
 }
 
 
@@ -525,7 +521,6 @@ p {
 .awardslsts {
     width: 660px;
     height: 719px;
-
     margin: 0 10px;
 }
 
@@ -570,11 +565,10 @@ p {
 .subpagebox img {
     width: 920px;
     height: 524px;
+    opacity: 0.7;
 }
 
-.subpagebox::after {
-    opacity: 0.15;
-}
+
 
 .subpagebox p {
     position: relative;
@@ -599,7 +593,7 @@ p {
 .subpagebox p a {
     position: relative;
     top: -10px;
-    left: px;
+    
     border-bottom: 2px solid #ffffff;
     font-size: 16px;
     font-family: "맑은고딕";
@@ -621,6 +615,7 @@ p {
 #event_img img {
     width: 100%;
     height: 960px;
+    opacity: 0.65;
 }
 
 #event_img p {
@@ -655,7 +650,11 @@ p {
 
 
 
-#event_box:hover{background-color: #ffffff; color: black;cursor: pointer;}
+#event_box:hover {
+    background-color: #ffffff;
+    color: black;
+    cursor: pointer;
+}
 
 
 
@@ -664,7 +663,60 @@ p {
 .Instagram {
     max-width: 1920px;
     height: 1053px;
-    background-color: brown;
+    background-color: white
+}
+
+.InstagramTitle {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    align-items: center;
+}
+
+.InstagramTitle span {
+    color: black;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.InstagramTitle p {
+    color: black;
+    font-size: 54px;
+}
+
+#Instagram_list_box {
+    width: 100%;
+    height: 650px;
+    display: flex;
+}
+
+.Instagramlist {
+    width: 630px;
+    height: 630px;
+    margin: 60px 5px 0;
+    overflow: hidden;
+}
+
+.Instagramlist img {
+    width: 100%;
+    height: 100%;
+}
+
+.Instagramlist img:hover {
+    opacity: 0.8;
+    transform: scale(1.2);
+   
+}
+
+.Instagramlist span {
+    position: relative;
+    top: -100px;
+    left: 30px;
+    font-size: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 
 /* content */
