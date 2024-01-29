@@ -27,7 +27,7 @@ body {
     font-size: 16px;
 
     font-family: 'TheJamsil5Bold';
-  
+
 }
 
 
@@ -40,8 +40,8 @@ body {
     background-color: #ecf0f1;
     display: block;
     margin: 8px auto;
-   
-    
+
+
     transition: all 0.3s ease-in-out;
 }
 
@@ -112,7 +112,7 @@ nav {
 #nav2 img {
     width: 22px;
     height: 22px;
-    
+
 }
 
 #nav2 img:hover {
@@ -593,7 +593,7 @@ p {
 .subpagebox p a {
     position: relative;
     top: -10px;
-    
+
     border-bottom: 2px solid #ffffff;
     font-size: 16px;
     font-family: "맑은고딕";
@@ -708,7 +708,7 @@ p {
 .Instagramlist img:hover {
     opacity: 0.8;
     transform: scale(1.2);
-   
+
 }
 
 .Instagramlist p {
@@ -722,14 +722,116 @@ p {
 
 }
 
-.Instagramlist:hover p{opacity: 1; color: #ffffff;}
+.Instagram_bar {
+    width: 240px;
+    height: 65px;
+    border: 1px solid black;
+    position: relative;
+    left: 825px;
+    top: 100px;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.Instagram_bar:hover {
+    background-color: black;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.Instagramlist:hover p {
+    opacity: 1;
+    color: #ffffff;
+}
+
+.Instagram_bar span:nth-child(2) {
+    transform: translateY(15px) rotate(90deg);
+    position: relative;
+    left: 54px;
+    top: -15px;
+}
+
+.Instagram_bar span:nth-child(3) {
+    transform: translateY() rotate(0)
+}
+
+.Instagram_bar span {
+    width: 13px;
+    height: 2px;
+    background-color: black;
+    display: block;
+}
+
+
 
 /* content */
 
 .content {
     max-width: 1920px;
     height: 787px;
-    background-color: aquamarine;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content #content_title {
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.content_box {
+    max-width: 1920px;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 100px;
+}
+
+.content_list {
+    width: 514px;
+    height: 467px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.content_list span{color: black; font-size: 18px; font-family:Arial, Helvetica, sans-serif;}
+
+.content_list p {color: black; }
+
+.content_box .content_list img {
+    width: 513px;
+    height: 329px;
+}
+
+.content_list a {
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 90px; border-bottom: 1px solid black;
 }
 
 /* footer */
+
+footer{max-width: 1920px; height: 878px;}
+
+#footer_top{max-width: 1920px; height: 59px; padding: 0 140px;}
+
+#footer_top ul li img{width: 20px; height: 20px; margin-top: 5px;}
+
+#footer_top ul{display: flex; width: 180px; height: 59px; justify-content: space-around; align-items: center;}
+
+#footer_topsub{max-width: 1920px; height: 78px; padding: 0 140px; display: flex; align-items: end; }
+
+#footer_topsub p{color: #ffffff; font-size: 14px;}
+
+#footer_main{max-width: 1920px; height: 878px; display: flex; justify-content: space-around; flex-wrap: wrap; padding: 0 120px;}
+
+.footer_main_item{width: 415px; height: 386px; background-color: #757575;}
