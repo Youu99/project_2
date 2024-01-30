@@ -24,7 +24,21 @@ $(document).ready(function () {
 
         $(".modellist,.modellist3,.modellist4").animate({marginLeft:`${move}%`},800);
     });
-        
-    
-   
 });
+
+$(function(){
+    $("#hamburger-1").click(function(){
+        $("#popup").slideToggle(400, function(){
+            if($('#popup').css('display') == 'none'){
+                $('nav').css('position','fixed')
+                $('#wrap').css({"height":"auto","overflow":"visible"})
+            }else{
+                $('nav').css('position','static')
+                $('#wrap').css({"height":1200,"overflow":"hidden"})
+            }
+        })
+       
+    })
+ 
+})
+

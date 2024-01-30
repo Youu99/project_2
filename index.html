@@ -7,8 +7,12 @@
   <title>HYUNDAI</title>
   <link rel="stylesheet" href="css/mian.css">
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="js/main.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
   <script>
 
@@ -16,156 +20,158 @@
 </head>
 
 <body>
+  <div id="wrap">
 
-  <!-- header -->
-  <header>
+    <!-- header -->
+    <header>
 
-    <nav>
+      <nav>
 
-      <ul id="nav1">
-        <li><img src="img/logo2.png" alt="logo"></li>
-        <li>모델</li>
-        <li>구매</li>
-        <li>체험</li>
-        <li>맴버스</li>
-        <li>현대 N</li>
-      </ul>
-      <ul id="nav2">
-        <li>고객센터</li>
-        <li>마이 페이지</li>
-        <li><img src="img/icon1.png" alt="icon"></li>
-
-        <div class="hamburger" id="hamburger-1">
-          <span class="line"></span>
-          <span class="line"></span>
+        <ul id="nav1">
+          <li><img src="img/logo2.png" alt="logo"></li>
+          <li>모델</li>
+          <li>구매</li>
+          <li>체험</li>
+          <li>맴버스</li>
+          <li>현대 N</li>
+        </ul>
+        <ul id="nav2">
+          <li>고객센터</li>
+          <li>마이 페이지</li>
+          <li><img src="img/icon1.png" alt="icon"></li>
+          <li></li>
+          <div class="hamburger" id="hamburger-1">
+            <span class="line"></span>
+            <span class="line"></span>
+          </div>
         </ul>
 
 
-    </nav>
+      </nav>
 
-    <div class="mainslider">
+      <div class="mainslider">
 
-      <div class="sliderlist">
+        <div class="sliderlist">
 
-        <div class="slide mainslider1">
+          <div class="slide mainslider1">
 
-          <h2>The new AVANTE N</h2>
-          <h3>Never just drive</h3>
-          <h4>The new AVANTE N 출시</h4>
-          <p class="mainp">자세히 보기</p>
-          <p class="mainp2">견적 내기</p>
+            <p class="titleh2">The new AVANTE N</p>
+            <p class="titleh3">Never just drive</p>
+            <p class="titleh4">The new AVANTE N 출시</p>
+            <p class="mainp">자세히 보기<span></span><span></span></p>
+            <p class="mainp2">견적 내기</p>
+          </div>
+
+          <div class="slide mainslider2">
+            <p class="titleh2">NEXO</p>
+            <p class="titleh3">Positive Energy, NEXO</p>
+            <p class="mainp">자세히 보기</p>
+            <p class="mainp2">견적 내기</p>
+          </div>
+
+          <div class="slide slide mainslider3">
+
+            <p class="titleh2">The all-new KONA Electric</p>
+            <p class="titleh3">새로운 차원의 라이프</p>
+            <p class="mainp">자세히 보기</p>
+            <p class="mainp2">견적 내기</p>
+          </div>
+
+          <div class="slide mainslider4">
+
+            <p class="titleh2">IONIQ 6</p>
+            <p class="titleh3">내가 만드는 세상</p>
+            <p class="mainp">자세히 보기</p>
+            <p class="mainp2">견적 내기</p>
+          </div>
+
+          <div class="slide mainslider5">
+
+            <p class="titleh2">IONIQ 5 N</p>
+            <p class="titleh3">Everyday N Life</p>
+            <p class="mainp">자세히 보기</p>
+            <p class="mainp2">견적 내기</p>
+          </div>
+
+          <div class="slide mainslider6">
+
+            <p class="titleh2">The new AVANTE</p>
+            <p class="titleh3">지금, 더 매력적인</p>
+            <p class="mainp">자세히 보기</p>
+            <p class="mainp2">견적 내기</p>
+          </div>
+
+          <div class="slide mainslider7">
+
+            <p class="titleh2">The new AVANTE Hybrid</p>
+            <p class="titleh3">지금, 더 매력적인</p>
+            <p class="mainp">자세히 보기</p>
+            <p class="mainp2">견적 내기</p>
+          </div>
+
+          <div class="slide mainslider8">
+
+            <p class="titleh2">TSONATA The Edge</p>
+            <p class="titleh3">익숙함도 완전히 새롭게</p>
+            <p class="mainp">자세히 보기</p>
+            <p class="mainp2">견적 내기</p>
+          </div>
+
+          <div class="slide mainslider9">
+
+            <p class="titleh2">The all-new GRANDEUR</p>
+            <p class="titleh3">Outclass GRANDEUR</p>
+            <p class="mainp">자세히 보기</p>
+            <p class="mainp2">견적 내기</p>
+          </div>
+
+          <div class="slide mainslider10">
+
+            <p class="titleh2">The new TUCSON</p>
+            <p class="titleh3">날개를 달다</p>
+            <p class="titleh4">12/6 The new TUCSON 출시</p>
+            <p class="mainp">자세히 보기</p>
+            <p class="mainp2">견적 내기</p>
+          </div>
+
+
+
         </div>
-
-        <div class="slide mainslider2">
-          <h2>NEXO</h2>
-          <h3>Positive Energy, NEXO</h3>
-          <p class="mainp">자세히 보기</p>
-          <p class="mainp2">견적 내기</p>
+        <div id="button">
+          <span class="buttonicon pix"></span>
+          <span class="buttonicon"></span>
+          <span class="buttonicon"></span>
+          <span class="buttonicon"></span>
+          <span class="buttonicon"></span>
+          <span class="buttonicon"></span>
+          <span class="buttonicon"></span>
+          <span class="buttonicon"></span>
+          <span class="buttonicon"></span>
+          <span class="buttonicon"></span>
         </div>
-
-        <div class="slide slide mainslider3">
-
-          <h2>The all-new KONA Electric</h2>
-          <h3>새로운 차원의 라이프</h3>
-          <p class="mainp">자세히 보기</p>
-          <p class="mainp2">견적 내기</p>
-        </div>
-
-        <div class="slide mainslider4">
-
-          <h2>IONIQ 6</h2>
-          <h3>내가 만드는 세상</h3>
-          <p class="mainp">자세히 보기</p>
-          <p class="mainp2">견적 내기</p>
-        </div>
-
-        <div class="slide mainslider5">
-
-          <h2>IONIQ 5 N</h2>
-          <h3>Everyday N Life</h3>
-          <p class="mainp">자세히 보기</p>
-          <p class="mainp2">견적 내기</p>
-        </div>
-
-        <div class="slide mainslider6">
-
-          <h2>The new AVANTE</h2>
-          <h3>지금, 더 매력적인</h3>
-          <p class="mainp">자세히 보기</p>
-          <p class="mainp2">견적 내기</p>
-        </div>
-
-        <div class="slide mainslider7">
-
-          <h2>The new AVANTE Hybrid</h2>
-          <h3>지금, 더 매력적인</h3>
-          <p class="mainp">자세히 보기</p>
-          <p class="mainp2">견적 내기</p>
-        </div>
-
-        <div class="slide mainslider8">
-
-          <h2>TSONATA The Edge</h2>
-          <h3>익숙함도 완전히 새롭게</h3>
-          <p class="mainp">자세히 보기</p>
-          <p class="mainp2">견적 내기</p>
-        </div>
-
-        <div class="slide mainslider9">
-
-          <h2>The all-new GRANDEUR</h2>
-          <h3>Outclass GRANDEUR</h3>
-          <p class="mainp">자세히 보기</p>
-          <p class="mainp2">견적 내기</p>
-        </div>
-
-        <div class="slide mainslider10">
-
-          <h2>The new TUCSON</h2>
-          <h3>날개를 달다</h3>
-          <h4>12/6 The new TUCSON 출시</h4>
-          <p class="mainp">자세히 보기</p>
-          <p class="mainp2">견적 내기</p>
-        </div>
-
-
-
       </div>
-      <div id="button">
-        <span class="buttonicon pix"></span>
-        <span class="buttonicon"></span>
-        <span class="buttonicon"></span>
-        <span class="buttonicon"></span>
-        <span class="buttonicon"></span>
-        <span class="buttonicon"></span>
-        <span class="buttonicon"></span>
-        <span class="buttonicon"></span>
-        <span class="buttonicon"></span>
-        <span class="buttonicon"></span>
+
+    </header>
+
+
+    <!-- Model -->
+
+    <div class="model">
+
+      <div class="modelbox">
+
+        <p class="modeltitle">Our Models</p>
+        <p>역동적이면서도 우아한 디자인과 최첨단 기술을 탑재한 브랜드의 라인업을 살펴보세요.</p>
+        <select id="modelsearch">
+          <option>HYDROGEN / ELECTRIC</option>
+          <option>N</option>
+          <option>SEDAN</option>
+        </select>
       </div>
-    </div>
 
-  </header>
+      <!-- HYDROGEN / ELECTRIC 박스  -->
 
-
-  <!-- Model -->
-
-  <div class="model">
-
-    <div class="modelbox">
-      
-      <p class="modeltitle">Our Models</p>
-      <p>역동적이면서도 우아한 디자인과 최첨단 기술을 탑재한 브랜드의 라인업을 살펴보세요.</p>
-      <select id="modelsearch">
-        <option>HYDROGEN / ELECTRIC</option>
-        <option>N</option>
-        <option>SEDAN</option>
-      </select>
-    </div>
-
-              <!-- HYDROGEN / ELECTRIC 박스  -->
-
-    <!-- <div class="modellist">
+      <!-- <div class="modellist">
       
       <div class="modelbox1">
         <h3>넥쏘</h3>
@@ -206,9 +212,9 @@
     </div> -->
 
 
-                <!-- N 리스트 -->
+      <!-- N 리스트 -->
 
-    <!-- <div class="modellist2">
+      <!-- <div class="modellist2">
 
       <div class="modelbox1">
         <h3>더 뉴 아반떼 N</h3>
@@ -224,9 +230,9 @@
 
     </div> -->
 
-    <!-- 슷용 리스트 -->
+      <!-- 슷용 리스트 -->
 
-    <!-- <div class="modellist3">
+      <!-- <div class="modellist3">
 
     <div class="modelbox1">
       <h3>더 뉴 아반떼</h3>
@@ -266,257 +272,263 @@
 
   </div> -->
 
-  <!-- SUV 리스트 -->
+      <!-- SUV 리스트 -->
 
-  <div class="modellist4">
-      
-    <div class="modelbox1">
-      <h3>더 뉴 투싼</h3>
-      <img src="img/Umodel.png" alt="model">
-      <div class="modelbutton">자세히 보기</div>
-    </div>
+      <div class="modellist4">
 
-    <div class="modelbox1">
-      <h3>더 뉴 투싼 Hybrid</h3>
-      <img src="img/Umodel2.png" alt="model">
-      <div class="modelbutton">자세히 보기</div>
-    </div>
-
-    <div class="modelbox1">
-      <h3>베뉴</h3>
-      <img src="img/Umodel3.png" alt="model">
-      <div class="modelbutton">자세히 보기</div>
-    </div>
-
-    <div class="modelbox1">
-      <h3>디 올 뉴 코나</h3>
-      <img src="img/Umodel4.png" alt="model">
-      <div class="modelbutton">자세히 보기</div>
-    </div>
-
-    <div class="modelbox1">
-      <h3>디 올 뉴 코나 Hybrid</h3>
-      <img src="img/Umodel5.png" alt="model">
-      <div class="modelbutton">자세히 보기</div>
-    </div>
-
-    <div class="modelbox1">
-      <h3>디 올 뉴 투싼페</h3>
-      <img src="img/Umodel6.png" alt="model">
-      <div class="modelbutton">자세히 보기</div>
-    </div> 
-
-    
-
-  </div>
-
-        <div id="button1">
-          <span class="buttonicon pix1"></span>
-          <span class="buttonicon"></span>
-          <span class="buttonicon"></span>
-          <span class="buttonicon"></span>
-          
-      
+        <div class="modelbox1">
+          <h3>더 뉴 투싼</h3>
+          <img src="img/Umodel.png" alt="model">
+          <div class="modelbutton">자세히 보기</div>
         </div>
+
+        <div class="modelbox1">
+          <h3>더 뉴 투싼 Hybrid</h3>
+          <img src="img/Umodel2.png" alt="model">
+          <div class="modelbutton">자세히 보기</div>
+        </div>
+
+        <div class="modelbox1">
+          <h3>베뉴</h3>
+          <img src="img/Umodel3.png" alt="model">
+          <div class="modelbutton">자세히 보기</div>
+        </div>
+
+        <div class="modelbox1">
+          <h3>디 올 뉴 코나</h3>
+          <img src="img/Umodel4.png" alt="model">
+          <div class="modelbutton">자세히 보기</div>
+        </div>
+
+        <div class="modelbox1">
+          <h3>디 올 뉴 코나 Hybrid</h3>
+          <img src="img/Umodel5.png" alt="model">
+          <div class="modelbutton">자세히 보기</div>
+        </div>
+
+        <div class="modelbox1">
+          <h3>디 올 뉴 투싼페</h3>
+          <img src="img/Umodel6.png" alt="model">
+          <div class="modelbutton">자세히 보기</div>
+        </div>
+
+
+
+      </div>
+
+      <div id="button1">
+        <span class="buttonicon pix1"></span>
+        <span class="buttonicon"></span>
+        <span class="buttonicon"></span>
+        <span class="buttonicon"></span>
+
+
+      </div>
     </div>
-  
 
 
 
-  <!-- iconmenu -->
 
-  <div class="iconmenu">
-    <div class="imgbox">
-      <ul>
+    <!-- iconmenu -->
+
+    <div class="iconmenu">
+      <div class="imgbox">
+        <ul>
           <li><img src="img/GIF.gif" alt="gif"></li>
           <li><img src="img/GIF2.gif" alt="gif"></li>
           <li><img src="img/GIF3.gif" alt="gif"></li>
           <li><img src="img/GIF4.gif" alt="gif"></li>
-      </ul>
-    </div>
-  </div>
-
-
-  <!-- 수상 정보 -->
-
-  <div class="awards">
-    <!-- <img src="img/AWARDS.jpg" alt="fulimg"> -->
-    <div class="awardstitle">
-      <p>THE AWARDS</p>
-    </div>
-  
-    <div class="awardsbox">
-      <div class="awardslsts">
-            <img src="img/AWARDS.jpg" alt="수상작">
-            <span>2023 굿디자인 어워드</span>
-            <p>본상 수상작'N 비전74'</p>
-            <p class="awardstext">현대자동차는 인터랙티브 미디어 디자인 부문에서도 차세대 인포테인먼트 시스템 ccNC(connected car Navigation Cockpit) ‘선(Seon)’과 모빌리티 전용 서체 ‘현대 <br>산스 UI(Hyundai Sans UI)’가 수상했다.</p>
-          </div>
-          <div class="awardslsts">
-            <img src="img/AWARDS2.jpg" alt="수상작">
-            <span>2023 굿디자인 어워드</span>
-            <p>2023 월드카 어워즈 세계 올해의 차 선정</p>
-            <p class="awardstext">아이오닉 6는 지난 5일 미국 뉴욕 국제오토쇼 행사장에서 열린 2023 WCA 시상식에서 ‘세계 올해의 차’와 함께 ‘세계 올해의 전기차(World Electric Vehicle of the Year)’, ‘세계 올해의 자동차 디자인(World Car Design of the Year)’에도 선정되며 3관왕을 달성했습니다.</p>
-          </div>
-      <!-- <div class="awardslsts">
-        <img src="img/AWARDS3.jpg" alt="수상작">
-        <span>2023 굿디자인 어워드</span>
-        <p>'2023 올해의 차'에 선정</p>
-        <p class="awardstext">현대자동차의 신형 그랜저가 자동차 기자들이 뽑은 '2023 올해의 차'에 선정됐다. 소음·진동 등 전체 평가항목에서 높은 점수를 받은 그랜저는 BMW 7시리즈를
-          근소한 차이로 누르고 최고의 자리에 올랐다.</p>
-      </div>
-  
-      <div class="awardslsts">
-        <img src="img/AWARDS4.jpg" alt="수상작">
-        <span>2023 굿디자인 어워드</span>
-        <p>'2024 북미 올해의 차(NACTOY)' 유틸리티 부문 수상</p>
-        <p class="awardstext">현대차그룹은 2024 북미 올해의 차 유틸리티 부문에서 모두 3개의 차종으로 구성되는 최종 후보에 현대차 코나(전기차 포함), 기아 EV9, 제네시스 GV70
-          전동화모델이 올랐다고 13일 밝혔다.</p>
-      </div> -->
-    </div>
-  
-  </div>
-
-  
-
-  <!-- subpage -->
-
-  <div class="subpage">
-
-    <div class="subpagebox">
-      <img src="img/space.png" alt="스페이스">
-      <p>스페이스</p>
-      <span>현대의 디자인과 고유한 감각을 반영한 현대적 공간으로 여러분을 초대합니다.<br><br> 현대에 관한 다양한 체험으로 당신만의 현대를 찾는 여정을 지원합니다.</span>
-      <p><a href="#">자세히 보기</a></p>
-    </div>
-
-    <div class="subpagebox">
-      <img src="img/space2.jpg" alt="로드트립">
-      <p>로드트립</p>
-      <span>현대와 내셔널지오그래픽 트래블러와 함께하는 서사적 여행, <br><br>현대 로드트립을 통해 자세한 정보를 확인하세요.</span>
-      <p><a href="#">자세히 보기</a></p>
-    </div>
-
-  </div>
-
-
-  <!-- eventmenu -->
-
-  <div class="eventmenu">
-    <div id="event_img">
-      <img src="img/EVENTMAINPAGE.jpg" alt="">
-      <p>HYUNDAI EVENTS</p>
-      <p>현대에서 진행중인 다양한 이벤트를 소개합니다.</p>
-      <div id="event_box">
-        자세히 보기
+        </ul>
       </div>
     </div>
-  </div>
 
-  <!-- Instagram 인스타그램 -->
 
-  <div class="Instagram">
+    <!-- 수상 정보 -->
+
+    <div class="awards">
     
-    <div class="InstagramTitle">
-      <span>INSTAGRAM</span>
-      <p>Experience Genesis</p>
+     
+      
+
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="img/AWARDS.jpg" />
+              <span>2023 굿디자인 어워드</span>
+              <p>본상 수상작'N 비전74'</p>
+              <p class="awardstext"><a href="https://mauto.danawa.com/news/?Tab=A&Work=detail&no=5516463">자세히 보기</a></p>
+            </div>
+            <div class="swiper-slide">
+              <img src="img/AWARDS2.jpg" />
+              <span>2023 굿디자인 어워드</span>
+              <p>2023 월드카 어워즈 세계 올해의 차 선정</p>
+              <p class="awardstext"><a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1007144029">자세히 보기</a></p>
+            </div>
+            <div class="swiper-slide">
+              <img src="img/AWARDS3.jpg" />
+              <span>2023 굿디자인 어워드</span>
+                <p>'2023 올해의 차'에 선정</p>
+                <p class="awardstext"><a href="https://brunch.co.kr/@b6e2969fe95743c/298">자세히 보기</a></p>
+            </div>
+            <div class="swiper-slide">
+              <img src="img/AWARDS4.jpg" />
+              <span>2023 굿디자인 어워드</span>
+              <p>'2024 북미 올해의 차(NACTOY)' 유틸리티 부문 수상</p>
+              <p class="awardstext"><a href="https://mauto.danawa.com/news/?Tab=A&Work=detail&no=5492466">자세히 보기</a></p>
+            </div>
+           
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      
+      
+      </div>
+
+  
+
+
+
+    <!-- subpage -->
+
+    <div class="subpage">
+
+      <div class="subpagebox">
+        <img src="img/space.png" alt="스페이스">
+        <p>스페이스</p>
+        <span>현대의 디자인과 고유한 감각을 반영한 현대적 공간으로 여러분을 초대합니다.<br><br> 현대에 관한 다양한 체험으로 당신만의 현대를 찾는 여정을 지원합니다.</span>
+        <p><a href="#">자세히 보기</a></p>
+      </div>
+
+      <div class="subpagebox">
+        <img src="img/space2.jpg" alt="로드트립">
+        <p>로드트립</p>
+        <span>현대와 내셔널지오그래픽 트래블러와 함께하는 서사적 여행, <br><br>현대 로드트립을 통해 자세한 정보를 확인하세요.</span>
+        <p><a href="#">자세히 보기</a></p>
+      </div>
+
     </div>
 
-    <div id="Instagram_list_box">
 
-      <div class="Instagramlist">
-        <a href="https://www.instagram.com/p/C2O-93HrRIV/"><img src="img/insra.jpg" alt="인스타"></a>
-        <p>[#Myhyundai #Healing] 활기찬 연초를 맞아 바쁜 하루를 보내고 있다면
-          <br>잠시 코나와 떠나 휴식을 가져보세요.</p>
+    <!-- eventmenu -->
+
+    <div class="eventmenu">
+      <div id="event_img">
+        <img src="img/EVENTMAINPAGE.jpg" alt="">
+        <p>HYUNDAI EVENTS</p>
+        <p>현대에서 진행중인 다양한 이벤트를 소개합니다.</p>
+        <div id="event_box">
+          자세히 보기
+        </div>
       </div>
-      <div class="Instagramlist">
-        <a href="https://www.instagram.com/p/C16YlUhPPs_/"><img src="img/insra2.jpg" alt="인스타"></a>
-        <p>[겨울 여행 with 디 올 뉴 코나 하이브리드]
-        
-          새로운 한 해를 맞아 여행을 계획 중이면,<br>
-          디 올 뉴 코나 하이브리드와 힘차게 떠나보세요!</p>
+    </div>
+
+    <!-- Instagram 인스타그램 -->
+
+    <div class="Instagram">
+
+      <div class="InstagramTitle">
+        <span>INSTAGRAM</span>
+        <p>Experience Genesis</p>
       </div>
-      <div class="Instagramlist">
-        <a href="https://www.instagram.com/p/C11PAAzpFvV/"><img src="img/insra3.jpg" alt="인스타"></a>
-        <p>
-            
+
+      <div id="Instagram_list_box">
+
+        <div class="Instagramlist">
+          <a href="https://www.instagram.com/p/C2O-93HrRIV/"><img src="img/insra.jpg" alt="인스타"></a>
+          <p>[#Myhyundai #Healing] 활기찬 연초를 맞아 바쁜 하루를 보내고 있다면
+            <br>잠시 코나와 떠나 휴식을 가져보세요.
+          </p>
+        </div>
+        <div class="Instagramlist">
+          <a href="https://www.instagram.com/p/C16YlUhPPs_/"><img src="img/insra2.jpg" alt="인스타"></a>
+          <p>[겨울 여행 with 디 올 뉴 코나 하이브리드]
+
+            새로운 한 해를 맞아 여행을 계획 중이면,<br>
+            디 올 뉴 코나 하이브리드와 힘차게 떠나보세요!</p>
+        </div>
+        <div class="Instagramlist">
+          <a href="https://www.instagram.com/p/C11PAAzpFvV/"><img src="img/insra3.jpg" alt="인스타"></a>
+          <p>
+
             고급감과 실용성을 갖춘 테리어로 돌아온 더 뉴 투싼
             스마트해진 파노라믹 커브드 디스플레이는<br>
             12.3인치의 클러스터와 인포테인먼트 시스템이
             하나로 매끄럽게 연결되어 고급감을 선사합니다.
-        </p>
+          </p>
+        </div>
+
+      </div>
+      <div class="Instagram_bar">더보기
+        <a href="#" rel="리스트이동"></a>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+
+    <!-- content -->
+
+    <div class="content">
+
+      <div id="content_title">연관 컨텐츠</div>
+
+      <div class="content_box">
+        <div class="content_list">
+          <img src="img/2024event.jpg" alt="이벤트">
+          <span>이벤트</span>
+          <p>현대에서 진행중인 다양한 이벤트 정보를 전해 드립니다.</p>
+          <a href="#">자세히 보기</a>
+        </div>
+
+        <div class="content_list">
+          <img src="img/MyHyundai.jpg" alt="현대앱">
+          <span>My Hyundai 앱</span>
+          <p>현대 고객님의 일상에 편의를 더해줄 MY Hyundai 앱과 함께 하세요.</p>
+          <a href="#">자세히 보기</a>
+        </div>
+
+        <div class="content_list">
+          <img src="img/Mambus.jpg" alt="현대맴버스">
+          <span>맴버스</span>
+          <p>현대 오너분들께만 주어지는 특별한 혜택과 이상적인 경험을 선사합니다.</p>
+          <a href="#">자세히 보기</a>
+        </div>
+
+
       </div>
 
     </div>
-    <div class="Instagram_bar">더보기 
-      <a href="#" rel="리스트이동"></a>
-      <span></span>
-      <span></span>
-    </div>
-  </div>
 
-  <!-- content -->
+    <!-- footer -->
 
-  <div class="content">
+    <footer>
+      <div id="footer_top">
+        <ul>
+          <li>Share</li>
+          <li><a href="https://www.facebook.com/AboutHyundai" target="_blank"><img src="img/facebook.png" alt="페이스북"
+                t></a></li>
+          <li><a href="https://twitter.com/about_hyundai" target="_blank"><img src="img/Twitter.png" alt="트위터"></a></li>
+          <li><a href="https://www.instagram.com/about_hyundai/" target="_blank"><img src="img/insraicon.png"
+                alt="인스타그램"></a></li>
 
-    <div id="content_title">연관 컨텐츠</div>
-
-    <div class="content_box">
-      <div class="content_list">
-        <img src="img/2024event.jpg" alt="이벤트">
-        <span>이벤트</span>
-        <p>현대에서 진행중인 다양한 이벤트 정보를 전해 드립니다.</p>
-        <a href="#">자세히 보기</a>
+        </ul>
       </div>
-
-      <div class="content_list">
-        <img src="img/MyHyundai.jpg" alt="현대앱">
-        <span>My Hyundai 앱</span>
-        <p>현대 고객님의 일상에 편의를 더해줄 MY Hyundai 앱과 함께 하세요.</p>
-        <a href="#">자세히 보기</a>
+      <div id="footer_topsub">
+        <p>[공지사항]현대차 SNS 앰배서더 H스타일리스트 운영 대행사 모집</p>
       </div>
-
-      <div class="content_list">
-        <img src="img/Mambus.jpg" alt="현대맴버스">
-        <span>맴버스</span>
-        <p>현대 오너분들께만 주어지는 특별한 혜택과 이상적인 경험을 선사합니다.</p>
-        <a href="#">자세히 보기</a>
-      </div>
-
-
-    </div>
-
-  </div>
-
-  <!-- footer -->
-
-  <footer>
-    <div id="footer_top">
-      <ul>
-        <li>Share</li>
-        <li><a href="https://www.facebook.com/AboutHyundai" target="_blank"><img src="img/facebook.png" alt="페이스북" t></a></li>
-        <li><a href="https://twitter.com/about_hyundai" target="_blank"><img src="img/Twitter.png" alt="트위터"></a></li>
-        <li><a href="https://www.instagram.com/about_hyundai/" target="_blank"><img src="img/insraicon.png" alt="인스타그램"></a></li>
-        
-      </ul>
-    </div>
-    <div id="footer_topsub">
-      <p>[공지사항]현대차 SNS 앰배서더 H스타일리스트 운영 대행사 모집</p>
-    </div>
 
       <div id="footer_main">
         <div class="footer_main_item">
           <ul>
-          <li>모델</li>
-          <li>수소 / 전기차</li>
-          <li>N</li>
-          <li>승용</li>
-          <li>SUV</li>
-          <li>MPV</li>
-          <li>소형트럭&택시</li>
-          <li>트럭</li>
-          <li>버스</li>
-        </ul>
+            <li>모델</li>
+            <li>수소 / 전기차</li>
+            <li>N</li>
+            <li>승용</li>
+            <li>SUV</li>
+            <li>MPV</li>
+            <li>소형트럭&택시</li>
+            <li>트럭</li>
+            <li>버스</li>
+          </ul>
         </div>
         <div class="footer_main_item">
           <ul>
@@ -615,7 +627,152 @@
 
       </div>
 
-  </footer>
+    </footer>
+
+    <!-- 팝업창 -->
+
+    <div id="popup">
+      <div id="popup_top">
+        <img src="img/logo3.png" alt="로고">
+        <div>
+          <input type="search" placeholder="검색어를 입력해주세요.">
+
+        </div>
+        <img src="img/icon1.png" alt="돋보기" id="icon1">
+      </div>
+      <div id="footer_main">
+        <div class="footer_main_item">
+          <ul>
+            <li>모델</li>
+            <li>수소 / 전기차</li>
+            <li>N</li>
+            <li>승용</li>
+            <li>SUV</li>
+            <li>MPV</li>
+            <li>소형트럭&택시</li>
+            <li>트럭</li>
+            <li>버스</li>
+          </ul>
+        </div>
+        <div class="footer_main_item">
+          <ul>
+            <li>구매</li>
+            <li>견적내기</li>
+            <li>구매가이드</li>
+            <li>구매 상담 신청</li>
+            <li>현대 스펙트럼</li>
+            <li>사양 조회하기</li>
+          </ul>
+        </div>
+        <div class="footer_main_item">
+          <ul>
+            <li>체험</li>
+            <li>스페이스</li>
+            <li>시승 신청/li>
+            <li>전시장 찾기</li>
+            <li>현대 드라이빙 익스피리언스</li>
+          </ul>
+        </div>
+        <div class="footer_main_item">
+          <ul>
+            <li>맴버스</li>
+            <li>현대 맴버스</li>
+            <li>My Hyundai 앱</li>
+            <li>테크놀로지</li>
+            <li>차량관리 서비스</li>
+          </ul>
+        </div>
+        <div class="footer_main_item">
+          <ul>
+            <li>현대</li>
+            <li>브랜드</li>
+            <li>콘셉트카</li>
+            <li>현대X골프</li>
+            <li>모터쇼</li>
+            <li>로드트립</li>
+          </ul>
+        </div>
+        <div class="footer_main_item">
+          <ul>
+            <li>고객센터</li>
+            <li>고객센터 안내</li>
+            <li>공지사항</li>
+            <li>이벤트</li>
+            <li>자주 묻는 질문</li>
+            <li>다운로드 센터</li>
+          </ul>
+        </div>
+        <div class="footer_main_item">
+          <ul>
+            <li>마이 페이지</li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+
+      </div>
+      <div id="footer_botton1">
+        <ul>
+          <li>사이트 맵</li>
+          <li>이용약관</li>
+          <li>개인정보 처리방침</li>
+          <li>저작권 안내</li>
+          <li>보증안내</li>
+          <li>자동차 교환 및 환불 중재 규정 안내</li>
+          <li>하자 재보 통보 안내</li>
+        </ul>
+        <ul>
+          <li><a href="https://www.facebook.com/AboutHyundai"><img src="img/facebook.png" alt="페이스북"></a></li>
+          <li><a href="https://www.instagram.com/about_hyundai/"><img src="img/insraicon.png" alt="인스타"></a></li>
+          <li><a href="https://www.youtube.com/c/HYUNDAITRUCKBUS"><img src="img/Youtube.png" alt="유튜브"></a></li>
+        </ul>
+      </div>
+
+      <div id="footer_botton2">
+        <ul>
+          <li>현대 월드와이드</li>
+          <li>프라이버시 센터</li>
+          <li>현대 부티크</li>
+          <li>네비게이션 업데이트</li>
+          <li>현대 드라이빙 아카데미</li>
+          <li>윤리경영 사이버 감사실</li>
+          <li>인재 채용</li>
+        </ul>
+      </div>
+
+      <div id="footer_last">
+        <img src="img/logo3.png" alt="logo">
+        <p>Copyright 2024 Hyundai Motor Company.<br>
+          All Rights Reserved.</p>
+
+
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+var swiper = new Swiper(".mySwiper", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
+
+
+  </script>
 </body>
 
 </html>
