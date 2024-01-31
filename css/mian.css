@@ -30,7 +30,10 @@ body {
 
 }
 
-#wrap {width: 100%; height: auto;}
+#wrap {
+    width: 100%;
+    height: auto;
+}
 
 
 
@@ -40,7 +43,7 @@ body {
     padding: 0 5px 0;
     position: absolute;
     right: 0;
-    
+    left: 100%;
     z-index: 11;
 }
 
@@ -74,15 +77,15 @@ body {
 
 header {
     width: 100%;
-    height: 1003px;
-   
+
+
 }
 
 nav {
-    width: calc(100% - 240px) ;
+    width: calc(100% - 240px);
     height: 69px;
     background-color: black;
-    padding: 0 120px;
+    padding: 0 140px;
     display: flex;
     justify-content: space-between;
     position: fixed;
@@ -92,13 +95,13 @@ nav {
 }
 
 #nav1 img {
-    width: 128px;
+    width: 100%;
     height: 40px;
     padding: 15px 5px;
 }
 
 #nav1 {
-    width: 542px;
+    width: 40%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -106,17 +109,18 @@ nav {
 }
 
 #nav1 li {
-    color: #e4e4e4;
+    color: #bbbbbb;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 15px;
 }
 
 #nav1 li:hover {
     cursor: pointer;
+    color: #fff;
 }
 
 #nav2 {
-    width: 300px;
+    width: 20%;
     display: flex;
     align-items: center;
     position: relative;
@@ -133,11 +137,14 @@ nav {
     cursor: pointer;
 }
 
-#nav2 ul{display: flex; justify-content: space-around;}
+#nav2 ul {
+    display: flex;
+    justify-content: space-around;
+}
 
 #nav2 li {
-    color: #e4e4e4;
-     
+    color: #bbb;
+
     font-size: 15px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 15px;
@@ -145,16 +152,18 @@ nav {
 
 #nav2 li:hover {
     cursor: pointer;
+    color: #fff;
 }
 
 
 .mainslider {
-    max-width: 1920px;
-    height: 883px;
+    width: 100%;
+
 }
 
 .sliderlist {
     width: 100%;
+    height: auto;
 }
 
 .sliderlist div {
@@ -165,15 +174,16 @@ nav {
 
 
 #button {
-    width: 308px;
+    width: 20%;
     height: 20px;
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
     position: relative;
-    left: 800px;
+    left: 50%;
     top: -20px;
     z-index: 10;
+    transform: translateX(-20%);
 }
 
 .buttonicon {
@@ -192,8 +202,8 @@ nav {
 }
 
 .slide {
-    max-width: 1920px;
-    height: 883px;
+    width: 100%;
+
 }
 
 .slide:not(:first-of-type) {
@@ -202,6 +212,7 @@ nav {
 
 .mainslider1 {
     background: url(../img/mainslider.jpg) no-repeat center/cover;
+    height: auto;
 }
 
 .mainslider2 {
@@ -251,8 +262,8 @@ nav {
     position: absolute;
     font-size: 72px;
     color: #ffffff;
-    top: 140px;
-    left: 300px;
+    top: 15%;
+    left: 16.5%;
     z-index: 3;
     font-family: Arial, Helvetica, sans-serif;
 
@@ -261,50 +272,76 @@ nav {
 .sliderlist .titleh3 {
     position: absolute;
     color: #ffffff;
-    top: 245px;
+    top: 25%;
     font-size: 40px;
-    left: 310px;
+    left: 17%;
     z-index: 3;
     font-family: Arial, Helvetica, sans-serif;
+
 }
 
 .sliderlist .titleh4 {
     position: absolute;
     color: #ffffff;
-    top: 310px;
+    top: 33%;
     font-size: 25px;
-    left: 310px;
+    left: 17%;
     z-index: 3;
+
 }
 
 .mainp {
     position: absolute;
-    top: 800px;
-    left: 310px;
+    top: 84%;
+    left: 18%;
     font-size: 18px;
     z-index: 3;
     color: #ffffff;
     padding-bottom: 5px;
+    cursor: pointer;
 }
 
-.mainp:hover {
-    cursor: pointer;
-    border-bottom: 1px solid #ffffff;
+.mainp::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: #fff;
+    transition: 0.5s ease-in-out;
+}
+
+.mainp:hover::after {
+    width: 100%;
+
 }
 
 .mainp2 {
     position: absolute;
-    top: 800px;
-    left: 470px;
+    top: 84%;
+    left: 27%;
     font-size: 18px;
     z-index: 3;
     color: #ffffff;
     padding-bottom: 5px;
+    cursor: pointer;
 }
 
-.mainp2:hover {
-    cursor: pointer;
-    border-bottom: 1px solid #ffffff;
+.mainp2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: #fff;
+    transition: 0.5s ease-in-out;
+}
+
+.mainp2:hover::after {
+
+    width: 100%;
 }
 
 
@@ -333,8 +370,8 @@ nav {
 /* Model */
 
 .model {
-    max-width: 1340px;
-    height: 984px;
+    width: 1340px;
+
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -342,7 +379,7 @@ nav {
 }
 
 .modelbox {
-    width: 1340px;
+    width: 100%;
     height: 150px;
     display: flex;
     flex-direction: column;
@@ -398,6 +435,11 @@ p {
 
 }
 
+.modellist2,
+.modellist3,
+.modellist4 {
+    display: none;
+}
 
 
 .modelbox1 {
@@ -444,15 +486,16 @@ p {
 }
 
 #button1 {
-    width: 308px;
+    width: 20%;
     height: 20px;
     display: flex;
     justify-content: space-around;
     box-sizing: border-box;
     position: relative;
-    left: 500px;
+    left: 50%;
     z-index: 3;
     padding: 0 30px;
+    transform: translateX(-50%);
 }
 
 .buttonicon {
@@ -473,14 +516,14 @@ p {
 /* iconmenu */
 
 .iconmenu {
-    max-width: 1920px;
-    height: 530px;
+    width: 100%;
+
 
 
 }
 
 .imgbox {
-    width: 1340px;
+    width: 100%;
     height: 530px;
     margin: 0 auto;
     display: flex;
@@ -510,69 +553,95 @@ p {
 
 /* 수상 정보 */
 
-    .awards{max-width: 1920px;}
+.awards {
+    width: 100%;
+}
 
 
-    .swiper-slide {
-      background-position: center;
-      background-size: cover;
-      width: 800px;
-      height: 400px;
-      text-align: center;
-    }
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 800px;
+    height: 400px;
+    text-align: center;
+}
 
-        .swiper-slide span {
-            position: relative;
-            font-size: 30px;
-            color: #ffffff;
-            top: -500px;
-            left: 475px;
-            text-align: center;
-        }
+.swiper-slide span {
+    position: relative;
+    font-size: 30px;
+    color: #ffffff;
+    top: -500px;
+    left: 475px;
+    text-align: center;
+}
 
-        .swiper-slide p {
-            position: relative;
-            font-size: 26px;
-            color: #ffffff;
-            top: -470px;
-            left: 480px;
-        }
+.swiper-slide p {
+    position: relative;
+    font-size: 24px;
+    color: #ffffff;
+    top: -470px;
+    left: 480px;
+}
 
-        .swiper-slide .awardstext{
-            position: relative;
-            font-size: 20px;
-            color: white;
-            top: -430px;
-            left: 1370px;
-            border-bottom: 1px solid #ffffff;
-            width: 110px;
-            padding-bottom: 5px;
-        }
+.swiper-slide .awardstext {
+    position: relative;
+    font-size: 20px;
+    color: white;
+    top: -430px;
+    left: 1370px;
+    width: 110px;
+    padding-bottom: 5px;
+}
 
-        .swiper-slide img {
-        display: block;
-        width: 60%;
-        }
+.swiper-slide .awardstext::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: #fff;
+    transition: 0.5s ease-in-out;
+}
 
-        
+.swiper-slide .awardstext:hover::after {
+    width: 100%;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 60%;
+}
+
+.swiper .swiper-pagination .swiper-pagination-bullet {
+    background: #ccc;
+    opacity: 0.5;
+}
+
+.swiper .swiper-pagination .swiper-pagination-bullet-active {
+    background: white;
+    opacity: 1;
+}
 
 /* subpage */
 
 .subpage {
-    max-width: 1920px;
+    width: 100%;
     height: 764px;
     justify-content: space-between;
     display: flex;
 }
 
 .subpagebox {
-    width: 920px;
+    width: 100%;
     height: 524px;
     margin: 70px 0px 0 0px;
 }
 
+
+
 .subpagebox img {
-    width: 920px;
+    width: 100%;
     height: 524px;
     opacity: 0.7;
 }
@@ -603,56 +672,79 @@ p {
 .subpagebox p a {
     position: relative;
     top: -10px;
-
-    border-bottom: 2px solid #ffffff;
+    /* border-bottom: 1px solid #ffffff; */
+    padding-bottom: 5px;
     font-size: 16px;
     font-family: "맑은고딕";
 }
 
+.subpagebox p a::after, .subpagebox p a::before{content: "";
+position: absolute;
+left: 0;
+bottom: 0;
+height: 1px;
+background-color: #fff;
+}
+
+.subpagebox p a::after{
+    width: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.subpagebox p a::before{width: 100%;}
+.subpagebox p a:hover::before{width: 0;}
+
+.subpagebox p a:hover::after{width: 100%; }
+
+
+
 /* eventmenu */
 
 .eventmenu {
-    max-width: 1920px;
-    height: 1200px;
+    width: 100%;
+
 
 }
 
 #event_img {
     width: 100%;
-    height: 960px;
+    height: auto;
+    position: relative;
 }
 
 #event_img img {
     width: 100%;
-    height: 960px;
     opacity: 0.65;
 }
 
 #event_img p {
     color: #ffffff;
-    position: relative;
-    top: -750px;
-    left: 200px;
-    margin: 50px 0;
+    position: absolute;
+    top: 25%;
+    left: 11%;
+   
 }
+
+
 
 #event_img p:nth-of-type(1) {
     font-size: 54px;
-    width: 600px;
+    width: 60%;
 }
 
 #event_img p:nth-of-type(2) {
     font-size: 26px;
-    width: 600px;
+    width: 60%;
+    top: 33%;
 }
 
 #event_box {
     width: 240px;
     height: 56px;
     border: 1px solid #ffffff;
-    position: relative;
-    top: -750px;
-    left: 200px;
+    position: absolute;
+    top: 40%;
+    left: 11%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -673,18 +765,23 @@ p {
 /* Instagram 인스타그램 */
 
 .Instagram {
-    max-width: 1920px;
-    height: 1053px;
-    background-color: white
+    width: 100%;
+    
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
 }
 
 .InstagramTitle {
-    width: 100%;
-    height: 200px;
+    width: 100%;  
     display: flex;
     justify-content: end;
     flex-direction: column;
     align-items: center;
+    margin-top: 40px;
 }
 
 .InstagramTitle span {
@@ -700,20 +797,20 @@ p {
 
 #Instagram_list_box {
     width: 100%;
-    height: 650px;
+   
     display: flex;
+    overflow: hidden;
 }
 
 .Instagramlist {
     width: 630px;
-    height: 630px;
+   
     margin: 60px 5px 0;
     overflow: hidden;
 }
 
 .Instagramlist img {
     width: 100%;
-    height: 100%;
     transition: 0.3s;
 }
 
@@ -739,9 +836,6 @@ p {
     width: 240px;
     height: 65px;
     border: 1px solid black;
-    position: relative;
-    left: 825px;
-    top: 100px;
     color: black;
     display: flex;
     justify-content: space-around;
@@ -758,6 +852,10 @@ p {
 .Instagramlist:hover p {
     opacity: 1;
     color: #ffffff;
+}
+
+.Instagram_bar:hover span {
+    background-color: #fff;
 }
 
 .Instagram_bar span:nth-child(2) {
@@ -783,7 +881,7 @@ p {
 /* content */
 
 .content {
-    max-width: 1920px;
+    width: 100%;
     height: 787px;
     background-color: white;
     display: flex;
@@ -800,11 +898,11 @@ p {
 }
 
 .content_box {
-    max-width: 1920px;
+
     height: 500px;
     display: flex;
     justify-content: space-around;
-    margin: 0px 100px;
+
 }
 
 .content_list {
@@ -827,7 +925,7 @@ p {
 }
 
 .content_box .content_list img {
-    width: 513px;
+    width: 100%;
     height: 329px;
 }
 
@@ -841,12 +939,12 @@ p {
 /* footer */
 
 footer {
-    max-width: 1920px;
-    height: 878px;
+    width: 100%;
+
 }
 
 #footer_top {
-    max-width: 1920px;
+
     height: 59px;
     padding: 0 140px;
 }
@@ -859,14 +957,14 @@ footer {
 
 #footer_top ul {
     display: flex;
-    width: 180px;
+    width: 10%;
     height: 59px;
     justify-content: space-around;
     align-items: center;
 }
 
 #footer_topsub {
-    max-width: 1920px;
+  
     height: 78px;
     padding: 0 140px;
     display: flex;
@@ -879,7 +977,7 @@ footer {
 }
 
 #footer_main {
-    max-width: 1920px;
+
     height: 878px;
     display: flex;
     justify-content: flex-start;
@@ -888,8 +986,8 @@ footer {
 }
 
 .footer_main_item {
-    width: 415px;
-    height: 386px;
+    width: 25%;
+
     display: flex;
     box-sizing: border-box;
     padding: 20px;
@@ -909,14 +1007,17 @@ footer {
 }
 
 
-.footer_main_item ul li:hover{color: #ffffff; cursor: pointer;}
+.footer_main_item ul li:hover {
+    color: #ffffff;
+    cursor: pointer;
+}
 
 
 
 #footer_botton1 {
-    max-width: 1920px;
+
     height: 90px;
-    padding: 0 140px;
+    padding: 0 120px;
     display: flex;
     justify-content: space-between;
 }
@@ -951,9 +1052,9 @@ footer {
 }
 
 #footer_botton2 {
-    max-width: 1920px;
+
     height: 90px;
-    padding: 0 140px;
+    padding: 0 120px;
     display: flex;
     justify-content: space-between;
 }
@@ -975,7 +1076,7 @@ footer {
 }
 
 #footer_last {
-    max-width: 1920px;
+    width: 100%;
     height: 203px;
     display: flex;
     justify-content: center;
@@ -1021,7 +1122,7 @@ footer {
 #popup_top img {
     width: 170px;
     height: 50px;
-  
+
 }
 
 #popup_top input {
@@ -1031,13 +1132,32 @@ footer {
     border: none;
     color: white;
     font-size: 2rem;
-    padding: 0 10px ;
+    padding: 0 10px;
     text-align: center;
     margin: 20px 0;
     border-bottom: 1px solid #fff;
-    
+
 }
 
-#popup_top #icon1{width: 35px; height: 35px; position: relative;  top: -65px; left: 340px;} 
+#popup_top #icon1 {
+    width: 35px;
+    height: 35px;
+    position: relative;
+    top: -65px;
+    left: 340px;
+}
 
-#popup_top #icon1:hover{cursor: pointer;}
+#popup_top #icon1:hover {
+    cursor: pointer;
+}
+
+
+/* 뷰 포트 해상도  */
+
+@media (max-width:767px) {}
+
+
+@media (min-width:768px) and (max-width:1359px) {}
+
+
+@media (min-width:1360px) {}
