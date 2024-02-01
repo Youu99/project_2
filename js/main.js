@@ -14,17 +14,47 @@ $(document).ready(function () {
         $(".slide").eq(idx).fadeIn();
     })
 
+    if (window.matchMedia("(max-width: 767px)").matches) { 
+
+        $(".buttonicon").click(function(){
+            let idx = $(this).index();
+    
+            $(".buttonicon").removeClass("pix1");
+            $(this).addClass("pix1");
+            
+            let move = -100 *idx;
+    
+            $(".modellist,.modellist3,.modellist4").animate({marginLeft:`${move}%`},800);
+        });
+   
+   } else if (window.matchMedia("(min-width: 768px) and (max-width: 1359px)").matches) { 
+   
     $(".buttonicon").click(function(){
         let idx = $(this).index();
 
         $(".buttonicon").removeClass("pix1");
         $(this).addClass("pix1");
         
-        let move = -33.33*idx;
+        let move = -50 *idx;
 
         $(".modellist,.modellist3,.modellist4").animate({marginLeft:`${move}%`},800);
     });
+   
+    }else{
+        $(".buttonicon").click(function(){
+            let idx = $(this).index();
+    
+            $(".buttonicon").removeClass("pix1");
+            $(this).addClass("pix1");
+            
+            let move = -33.33*idx;
+    
+            $(".modellist,.modellist3,.modellist4").animate({marginLeft:`${move}%`},800);
+        });
+    }
+   
 });
+
 
 $(function(){
     $("#hamburger-1").click(function(){
