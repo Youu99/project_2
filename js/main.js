@@ -6,8 +6,8 @@ $(document).ready(function () {
     $(".buttonicon").click(function(){
         let idx = $(this).index();
 
-        $(".buttonicon").removeClass("pix");
-        $(this).addClass("pix");
+        $(".buttonicon").removeClass("pix1");
+        $(this).addClass("pix1");
 
 
         $(".slide").hide();
@@ -16,40 +16,40 @@ $(document).ready(function () {
 
     if (window.matchMedia("(max-width: 767px)").matches) { 
 
-        $(".buttonicon").click(function(){
+        $(".buttonicon2").click(function(){
             let idx = $(this).index();
     
-            $(".buttonicon").removeClass("pix1");
+            $(".buttonicon2").removeClass("pix1");
             $(this).addClass("pix1");
             
             let move = -100 *idx;
     
-            $(".modellist,.modellist3,.modellist4").animate({marginLeft:`${move}%`},800);
+            $(".modellist,.modellist3,.modellist4").animate({marginLeft:`${move}%`},500);
         });
    
    } else if (window.matchMedia("(min-width: 768px) and (max-width: 1359px)").matches) { 
    
-    $(".buttonicon").click(function(){
+    $(".buttonicon2").click(function(){
         let idx = $(this).index();
 
-        $(".buttonicon").removeClass("pix1");
+        $(".buttonicon2").removeClass("pix1");
         $(this).addClass("pix1");
         
         let move = -50 *idx;
 
-        $(".modellist,.modellist3,.modellist4").animate({marginLeft:`${move}%`},800);
+        $(".modellist,.modellist3,.modellist4").animate({marginLeft:`${move}%`},500);
     });
    
     }else{
-        $(".buttonicon").click(function(){
+        $(".buttonicon2").click(function(){
             let idx = $(this).index();
     
-            $(".buttonicon").removeClass("pix1");
+            $(".buttonicon2").removeClass("pix1");
             $(this).addClass("pix1");
             
             let move = -33.33*idx;
     
-            $(".modellist,.modellist3,.modellist4").animate({marginLeft:`${move}%`},800);
+            $(".modellist,.modellist3,.modellist4").animate({marginLeft:`${move}%`},500);
         });
     }
    
@@ -96,4 +96,18 @@ $(function(){
         },
       });
 })
+
+
+$(function(){
+    $(".modellist").not(':first').hide();
+
+    $("#modelsearch").change(function(){
+        let idx = $(this).prop('selectedIndex')
+        console.log(idx)
+
+        $(".modellist").hide();
+        $(".modellist").eq(idx).fadeIn();         
+    });
+})
+
 

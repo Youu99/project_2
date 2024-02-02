@@ -61,6 +61,10 @@ body {
     cursor: pointer;
 }
 
+
+
+
+
 /* ONE */
 
 
@@ -73,6 +77,8 @@ body {
     transform: translateY(-6px) rotate(-45deg);
 }
 
+
+   
 
 /* header */
 
@@ -264,7 +270,7 @@ nav {
     font-size: 72px;
     color: #ffffff;
     top: 15%;
-    left: 16.5%;
+    left: 13%;
     z-index: 3;
     font-family: Arial, Helvetica, sans-serif;
 
@@ -275,7 +281,7 @@ nav {
     color: #ffffff;
     top: 25%;
     font-size: 40px;
-    left: 17%;
+    left: 14%;
     z-index: 3;
     font-family: Arial, Helvetica, sans-serif;
 
@@ -286,7 +292,7 @@ nav {
     color: #ffffff;
     top: 33%;
     font-size: 25px;
-    left: 17%;
+    left: 14%;
     z-index: 3;
 
 }
@@ -380,7 +386,7 @@ nav {
 }
 
 .modelbox {
-    width: 100%;
+    width: 90%;
     height: 150px;
     display: flex;
     flex-direction: column;
@@ -425,21 +431,12 @@ p {
     background-color: black;
 }
 
-.modellist,
-.modellist2,
-.modellist3,
-.modellist4 {
+.modellist {
     width: 200%;
     height: 500px;
     margin: 0 auto;
     display: flex;
 
-}
-
-.modellist2,
-.modellist3,
-.modellist4 {
-    display: none;
 }
 
 
@@ -501,9 +498,9 @@ p {
 
 
 
-.buttonicon:nth-of-type(5),.buttonicon:nth-of-type(6){display: none;}
+.buttonicon2:nth-of-type(5),.buttonicon2:nth-of-type(6),.buttonicon2:nth-of-type(7),.buttonicon2:nth-of-type(8){display: none;}
 
-.buttonicon {
+.buttonicon2 {
     width: 8px;
     height: 8px;
     border: 2px solid transparent;
@@ -512,7 +509,7 @@ p {
     background-clip: padding-box;
 }
 
-.buttonicon:hover,
+.buttonicon2:hover,
 .pix1 {
     border: 2px solid #ffffff;
     cursor: pointer;
@@ -795,6 +792,7 @@ background-color: #fff;
     flex-direction: column;
     align-items: center;
     margin-top: 40px;
+    
 }
 
 .InstagramTitle span {
@@ -810,14 +808,13 @@ background-color: #fff;
 
 #Instagram_list_box {
     width: 100%;
-   
     display: flex;
     overflow: hidden;
 }
 
 .Instagramlist {
     width: 630px;
-   
+  
     margin: 60px 5px 0;
     overflow: hidden;
 }
@@ -825,6 +822,7 @@ background-color: #fff;
 .Instagramlist img {
     width: 100%;
     transition: 0.3s;
+   
 }
 
 .Instagramlist img:hover {
