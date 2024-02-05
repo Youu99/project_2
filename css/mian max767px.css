@@ -894,7 +894,7 @@
     .Instagram_bar span:nth-child(2) {
         transform: translateY(15px) rotate(90deg);
         position: relative;
-        left: 54px;
+        left: 55px;
         top: -15px;
     }
     
@@ -942,7 +942,7 @@
     }
     
     .content_list {
-        width: 100vw;
+        width: 96vw;
         
         display: flex;
         flex-direction: column;
@@ -1008,7 +1008,7 @@
     #footer_top {
     
         height: 59px;
-        padding: 0 120px;
+        padding: 0 15vw;
     }
     
     #footer_top ul li img {
@@ -1201,11 +1201,11 @@
     
     #popup_top input {
         background: black;
-        width: 625px;
+        width: 60vw;
         height: 67px;
         border: none;
         color: white;
-        font-size: 2rem;
+        font-size: 1.5rem;
         padding: 0 10px;
         text-align: center;
         margin: 20px 0;

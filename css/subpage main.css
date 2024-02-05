@@ -1,0 +1,353 @@
+@font-face {
+    font-family: 'TheJamsil5Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    color: #ffffff;
+}
+
+
+li,
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: black;
+    font-size: 16px;
+
+    font-family: 'TheJamsil5Bold';
+
+}
+
+#wrap {
+    width: 100%;
+    height: auto;
+}
+
+/* 네비게이션 버튼 */
+#button {
+    width: 20%;
+    height: 20px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    position: relative;
+    left: 50%;
+    top: -20px;
+    z-index: 10;
+    transform: translateX(-20%);
+}
+
+.buttonicon {
+    width: 8px;
+    height: 8px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    background: #ffffff66;
+    background-clip: padding-box;
+}
+
+.buttonicon:hover,
+.pix {
+    border: 2px solid #ffffff;
+    cursor: pointer;
+}
+
+.hamburger {
+    padding: 0 5px 0;
+    position: absolute;
+    right: 0;
+    left: 100%;
+    z-index: 11;
+}
+
+.hamburger .line {
+    width: 20px;
+    height: 2px;
+    background-color: #ecf0f1;
+    display: block;
+    margin: 8px auto;
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger:hover {
+    cursor: pointer;
+}
+
+#hamburger-1.is-active .line:nth-child(1) {
+    transform: translateY(4px) rotate(45deg);
+}
+
+#hamburger-1.is-active .line:nth-child(2) {
+    transform: translateY(-6px) rotate(-45deg);
+}
+
+/* 헤더 네비게이션 */
+
+header {
+    width: 100%;
+
+
+
+}
+
+nav {
+
+    height: 69px;
+    padding: 0 140px;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    z-index: 6;
+}
+
+#nav1 img {
+    width: 100%;
+    height: 40px;
+    padding: 15px 5px;
+}
+
+#nav1 {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 10px;
+}
+
+#nav1 li {
+    color: #bbbbbb;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+}
+
+#nav1 li:hover {
+    cursor: pointer;
+    color: #fff;
+}
+
+#nav2 {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between
+}
+
+#nav2 img {
+    width: 18px;
+    height: 22px;
+    margin: -7px 0;
+}
+
+#nav2 img:hover {
+    cursor: pointer;
+}
+
+#nav2 ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+#nav2 li {
+    color: #bbb;
+
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 15px;
+}
+
+#nav2 li:hover {
+    cursor: pointer;
+    color: #fff;
+}
+
+.subnav {
+    width: 100%;
+    height: 60px;
+    position: sticky;
+
+}
+
+.subnav #nav3 {
+    align-items: center;
+    justify-content: start;
+
+}
+
+#nav3 ul {
+    display: flex;
+    width: 90%;
+}
+
+#nav3 ul li {
+    font-size: 12px;
+    padding: 0 10px;
+    color: #7c7c7c;
+
+}
+
+#nav3 ul li:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+.subnav_box1 {
+    width: 190px;
+}
+
+#nav3 a {
+    width: 74px;
+    height: 28px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav3 a span {
+    color: black;
+    font-size: 11px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+
+/* 메인 비디오 페이지 */
+
+.vidio {
+    width: 100%;
+    height: 800px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+video {
+    width: 100%;
+    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.vidio p {
+    font-size: 54px;
+    position: absolute;
+    top: 570px;
+    left: 100px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.vidio a {
+    font-size: 16px;
+    position: absolute;
+    top: 700px;
+    left: 120px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-bottom: 5px;
+}
+
+.vidio a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    background-color: #fff;
+    transition: 0.5s ease-in-out;
+}
+
+.vidio a:hover::after {
+    width: 100%;
+}
+
+/* 개요 서브 페이지1 */
+
+.sub_page1 {
+    width: 100%;
+    height: 60vw;
+    margin: 50px 0;
+}
+
+#sub_page_img {
+    width: 100%;
+    height: 100%;
+}
+
+#sub_page_img img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* 개요 서브 페이지 2 */
+
+.sub_page2 {
+    width: 100%;
+    height: 60vw;
+    background-color: #7c7c7c;
+    margin: 50px 0;
+}
+
+.sub_page2 img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 개요 서브 페이지3 */
+
+.sub_page3 {
+    width: 100%;
+    height: 60vw;
+}
+
+.sub_page3 img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 외장 디자인 페이지1 */
+
+.sub_design_page1 {
+    width: 100%;
+    height: 50vw;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+
+    align-items: end;
+}
+
+.sub_design_page1 img {
+    width: 80%;
+    height: 90%;
+}
+
+/* 컬러 디자인 페이지 */
+.color_page1 {
+    width: 100%;
+    height: 45vw;
+    background-color: #A3B6D2;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.color_page1 img {
+    width: 75%;
+    height: 90%;
+}
