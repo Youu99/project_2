@@ -35,7 +35,7 @@ body {
     height: auto;
 }
 
-/* 네비게이션 버튼 */
+                            /* 네비게이션 버튼 */
 #button {
     width: 20%;
     height: 20px;
@@ -54,7 +54,7 @@ body {
     height: 8px;
     border: 2px solid transparent;
     border-radius: 50%;
-    background: #ffffff66;
+    background: #ffffff;
     background-clip: padding-box;
 }
 
@@ -93,7 +93,7 @@ body {
     transform: translateY(-6px) rotate(-45deg);
 }
 
-/* 헤더 네비게이션 */
+                                    /* 헤더 네비게이션 */
 
 header {
     width: 100%;
@@ -178,6 +178,9 @@ nav {
     width: 100%;
     height: 60px;
     position: sticky;
+    z-index: 10;
+    top: 0;
+    background-color: black;
 
 }
 
@@ -224,7 +227,7 @@ nav {
 }
 
 
-/* 메인 비디오 페이지 */
+                                /* 메인 비디오 페이지 */
 
 .vidio {
     width: 100%;
@@ -275,52 +278,118 @@ video {
     width: 100%;
 }
 
-/* 개요 서브 페이지1 */
+                            /* 개요 서브 페이지1 */
 
 .sub_page1 {
     width: 100%;
-    height: 60vw;
+    height: 120vw;
     margin: 50px 0;
+    background-image: url(../img/mainslider.jpg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;position: relative;
+
 }
+
 
 #sub_page_img {
     width: 100%;
     height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
 }
 
 #sub_page_img img {
     width: 100%;
     height: 100%;
+    position: absolute;
+}
+
+#pc {
+    font-size: 60px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 700px;
+    left: 150px; 
 }
 
 
-/* 개요 서브 페이지 2 */
+
+#p_pc {
+    font-size: 28px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    top: 1500px;
+    left: 150px;
+}
+
+#p_pc span{font-size: 14px;color: #7c7c7c;}
+
+
+
+
+
+                                /* 개요 서브 페이지 2 */
 
 .sub_page2 {
     width: 100%;
     height: 60vw;
-    background-color: #7c7c7c;
-    margin: 50px 0;
+   
+    margin: 50px 0 0 0;
+    
 }
 
 .sub_page2 img {
     width: 100%;
     height: 100%;
+    position: absolute;
 }
 
-/* 개요 서브 페이지3 */
+.sub_page2 p:nth-of-type(1){
+    position: relative;
+    top: 60%;
+    left: 7%;
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.sub_page2 p:nth-of-type(2){
+    position: relative;
+    top: 61%;
+    left: 7%;
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+                                    /* 개요 서브 페이지3 */
 
 .sub_page3 {
     width: 100%;
-    height: 60vw;
+    height: 55vw;
 }
 
 .sub_page3 img {
     width: 100%;
     height: 100%;
+    position: absolute;
 }
 
-/* 외장 디자인 페이지1 */
+.sub_page3 p:nth-of-type(1){
+    position: relative;
+    top: 68%;
+    left: 7%;
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.sub_page3 p:nth-of-type(2){
+    position: relative;
+    top: 69%;
+    left: 7%;
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+                                    /* 외장 디자인 페이지1 */
 
 .sub_design_page1 {
     width: 100%;
@@ -337,17 +406,23 @@ video {
     height: 90%;
 }
 
-/* 컬러 디자인 페이지 */
+                                    /* 컬러 디자인 페이지 */
 .color_page1 {
     width: 100%;
     height: 45vw;
     background-color: #A3B6D2;
     display: flex;
-    justify-content: end;
-    align-items: center;
+    
 }
 
-.color_page1 img {
+#color img {
     width: 75%;
     height: 90%;
 }
+
+.color_page1 button{background: none; border: none;}
+
+.colorbtn{display: flex;width: 100%; flex-direction: column; }
+
+.colorbtn button{color: #7c7c7c; font-size: 36px; border: none ;
+background: none; width: 100%;}
