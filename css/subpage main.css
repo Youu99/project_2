@@ -35,7 +35,7 @@ body {
     height: auto;
 }
 
-                            /* 네비게이션 버튼 */
+/* 네비게이션 버튼 */
 #button {
     width: 20%;
     height: 20px;
@@ -93,7 +93,7 @@ body {
     transform: translateY(-6px) rotate(-45deg);
 }
 
-                                    /* 헤더 네비게이션 */
+/* 헤더 네비게이션 */
 
 header {
     width: 100%;
@@ -227,7 +227,7 @@ nav {
 }
 
 
-                                /* 메인 비디오 페이지 */
+/* 메인 비디오 페이지 */
 
 .vidio {
     width: 100%;
@@ -237,7 +237,7 @@ nav {
 }
 
 
-video {
+.vidio video{
     width: 100%;
     position: relative;
     position: absolute;
@@ -249,6 +249,7 @@ video {
 .vidio p {
     font-size: 54px;
     position: absolute;
+    width: 30%;
     top: 570px;
     left: 100px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -257,6 +258,7 @@ video {
 .vidio a {
     font-size: 16px;
     position: absolute;
+    width: 30%;
     top: 700px;
     left: 120px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -278,7 +280,7 @@ video {
     width: 100%;
 }
 
-                            /* 개요 서브 페이지1 */
+/* 개요 서브 페이지1 */
 
 .sub_page1 {
     width: 100%;
@@ -287,7 +289,8 @@ video {
     background-image: url(../img/mainslider.jpg);
     background-repeat: no-repeat;
     background-position: right top;
-    background-attachment: fixed;position: relative;
+    background-attachment: fixed;
+    position: relative;
 
 }
 
@@ -312,7 +315,7 @@ video {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     position: absolute;
     top: 700px;
-    left: 150px; 
+    left: 150px;
 }
 
 
@@ -325,20 +328,22 @@ video {
     left: 150px;
 }
 
-#p_pc span{font-size: 14px;color: #7c7c7c;}
+#p_pc span {
+    font-size: 14px;
+    color: #7c7c7c;
+}
 
 
 
 
 
-                                /* 개요 서브 페이지 2 */
+/* 개요 서브 페이지 2 */
 
 .sub_page2 {
     width: 100%;
     height: 60vw;
-   
     margin: 50px 0 0 0;
-    
+
 }
 
 .sub_page2 img {
@@ -347,22 +352,25 @@ video {
     position: absolute;
 }
 
-.sub_page2 p:nth-of-type(1){
+.sub_page2 p:nth-of-type(1) {
     position: relative;
+    width: 30%;
     top: 60%;
     left: 7%;
     font-size: 40px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.sub_page2 p:nth-of-type(2){
+
+.sub_page2 p:nth-of-type(2) {
     position: relative;
+    width: 30%;
     top: 61%;
     left: 7%;
     font-size: 40px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-                                    /* 개요 서브 페이지3 */
+/* 개요 서브 페이지3 */
 
 .sub_page3 {
     width: 100%;
@@ -375,21 +383,25 @@ video {
     position: absolute;
 }
 
-.sub_page3 p:nth-of-type(1){
+.sub_page3 p:nth-of-type(1) {
     position: relative;
+    width: 30%;
     top: 68%;
     left: 7%;
     font-size: 40px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.sub_page3 p:nth-of-type(2){
+
+.sub_page3 p:nth-of-type(2) {
     position: relative;
+    width: 30%;
     top: 69%;
     left: 7%;
     font-size: 40px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-                                    /* 외장 디자인 페이지1 */
+
+/* 외장 디자인 페이지1 */
 
 .sub_design_page1 {
     width: 100%;
@@ -397,32 +409,182 @@ video {
     background-color: #fff;
     display: flex;
     justify-content: center;
-
     align-items: end;
+
 }
+
+/* .design_page_img{
+    width: 800px;
+    height: 600px;
+    background-image: url(../img2/slider360do1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform-origin: center center;
+    transition: 0.5s;
+    position: fixed;;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50% ,-50%)rotateY(0deg);} */
 
 .sub_design_page1 img {
     width: 80%;
     height: 90%;
 }
 
-                                    /* 컬러 디자인 페이지 */
+/* 컬러 디자인 페이지 */
 .color_page1 {
     width: 100%;
-    height: 45vw;
+    height: 50vw;
     background-color: #A3B6D2;
     display: flex;
-    
+    flex-direction: column;
+    position: relative;
 }
 
 #color img {
     width: 75%;
     height: 90%;
+    position: absolute;
+    top: 0;
+    left: 20%;
+
 }
 
-.color_page1 button{background: none; border: none;}
+.colorbtn1 {
+    width: 80%;
+    height: 50px;
+    margin: 30px 140px 0;
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 
-.colorbtn{display: flex;width: 100%; flex-direction: column; }
+.colorbtn2 {
+    width: 60%;
+    margin: 0 140px;
+}
 
-.colorbtn button{color: #7c7c7c; font-size: 36px; border: none ;
-background: none; width: 100%;}
+.colorbtn2 li {
+    line-height: 60px;
+    font-size: 28px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.colorbtn2 li {
+    color: #ddd;
+}
+
+.colorbtn2 li:hover {
+    color: white;
+}
+
+.colorbtn1,
+.colorbtn2 li:hover {
+    cursor: pointer;
+}
+
+#color li:not(:first-of-type) {
+    display: none;
+}
+
+#colortext1,
+#colortext2 {
+    color: #000;
+    position: absolute;
+    font-size: 13px;
+}
+
+#colortext1 {
+    left: 60%;
+    top: 10%;
+}
+
+#colortext2 {
+    left: 60%;
+    top: 13%;
+}
+
+/* 실내 페이지 1*/
+
+.inside {
+    width: 100%;
+    height: 60vw;
+    background-image: url(../img2/inside.jpg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.inside p:nth-child(1) {
+    width: 50%;
+    font-size: 18px;
+    color: #7c7c7c;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 60px 140px 30px;
+}
+
+.inside p:nth-child(2) {
+    width: 50%;
+    font-size: 42px;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 0 140px;
+}
+
+/* <!-- 실내 디자인 페이지2 --> */
+
+.inside2 {
+    width: 100%;
+    height: 450vw;
+    background-color: #7c7c7c;
+    display: flex;
+    position: sticky;
+}
+
+.inside_box1 {
+    width: 50%;
+    height: auto;
+    background-color: #fff;
+}
+
+.inside_box2 {
+    width: 50%;
+    height: auto;
+    background-color: #fff;
+}
+
+.inside_box_item {
+    width: 100%;
+    height: 10.3%;
+    /* background-color: aquamarine; */
+    margin: 30px 0;
+    
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.inside_box_item p {
+    color: #767676;
+    width: 500px;
+    height: auto;
+    line-height: 50px;
+    position: sticky;
+    left: 150px;
+    top: 250px;
+}
+
+.inside_box_item span {
+    color: black;
+}
+
+.inside_box2 .inside_box_item img{width: 100%; height: 100%;}
+
+.inside_vidio{width: 100%; }
+
+.inside_box2 .inside_box_item:nth-of-type(5){height: 7%;}
+
+.inside_box1 .inside_box_item:nth-of-type(5){height: 7%;}
+
+.inside_box2 .inside_box_item:nth-of-type(6){height: 7%;}
+
+.inside_box1 .inside_box_item:nth-of-type(6){height: 7%;}
