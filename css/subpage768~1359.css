@@ -1,3 +1,4 @@
+@media (min-width:768px) and (max-width:1359px){
 @font-face {
     font-family: 'TheJamsil5Bold';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil5Bold.woff2') format('woff2');
@@ -65,10 +66,10 @@ body {
 }
 
 .hamburger {
-    padding: 0 5px 0;
+    
     position: absolute;
     right: 0;
-    left: 100%;
+    left: 60%;
     z-index: 11;
     width: 15px;
 }
@@ -106,7 +107,7 @@ header {
 nav {
 
     height: 69px;
-    padding: 0 140px;
+    padding: 0 0px;
     display: flex;
     justify-content: space-between;
     top: 0;
@@ -121,7 +122,7 @@ nav {
 }
 
 #nav1 {
-    width: 40%;
+    width: 60%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -131,7 +132,7 @@ nav {
 #nav1 li {
     color: #bbbbbb;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 15px;
+    font-size: 12px;
 }
 
 #nav1 li:hover {
@@ -140,11 +141,12 @@ nav {
 }
 
 #nav2 {
-    width: 20%;
+    width: 40%;
     display: flex;
     align-items: center;
     position: relative;
     justify-content: space-between
+  
 }
 
 #nav2 img {
@@ -164,10 +166,10 @@ nav {
 
 #nav2 li {
     color: #bbb;
-
-    font-size: 15px;
+    display: none;
+    font-size: 12px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 15px;
+   
 }
 
 #nav2 li:hover {
@@ -197,8 +199,8 @@ nav {
 }
 
 #nav3 ul li {
-    font-size: 12px;
-    padding: 0 10px;
+    font-size: 11px;
+    padding: 0 5px;
     color: #7c7c7c;
 
 }
@@ -209,25 +211,27 @@ nav {
 }
 
 .subnav_box1 {
-    width: 190px;
+    width: 140px;
+    text-align: center;
 }
 
 #nav3 a {
     width: 74px;
-    height: 28px;
+    height: 20px;
     background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 5%;
 }
 
 #nav3 a span {
     color: black;
-    font-size: 11px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    font-size: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    
 }
-
-.active {background-color: #fff; color: #fff;}
 
 
 /* 메인 비디오 페이지 */
@@ -250,20 +254,20 @@ nav {
 }
 
 .vidio p {
-    font-size: 54px;
+    font-size: 38px;
     position: absolute;
     width: 30%;
-    top: 570px;
-    left: 100px;
+    top: 30%;
+    left: 5%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .vidio a {
-    font-size: 16px;
+    font-size: 18px;
     position: absolute;
-    width: 30%;
-    top: 700px;
-    left: 120px;
+    width: 10%;
+    top: 65%;
+    left: 5%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding-bottom: 5px;
 }
@@ -287,13 +291,14 @@ nav {
 
 .sub_page1 {
     width: 100%;
-    height: 120vw;
+    height: 280vw;
     margin: 50px 0;
     background-image: url(../img/mainslider.jpg);
     background-repeat: no-repeat;
-    background-position: right top;
     background-attachment: fixed;
     position: relative;
+    background-position: center;
+    background-size: cover;
 
 }
 
@@ -310,25 +315,25 @@ nav {
 #sub_page_img img {
     width: 100%;
     height: 100%;
-    
+    position: absolute;
 }
 
 #pc {
-    font-size: 60px;
+    font-size: 40px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     position: absolute;
     top: 700px;
-    left: 150px;
+    left: 10%;
 }
 
 
 
 #p_pc {
-    font-size: 28px;
+    font-size: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     position: absolute;
     top: 1500px;
-    left: 150px;
+    left: 10%;
 }
 
 #p_pc span {
@@ -344,32 +349,31 @@ nav {
 
 .sub_page2 {
     width: 100%;
-    height: 60vw;
-    margin: 50px 0 0 0;
-    
+    height: 120vw;
+
 }
 
 .sub_page2 img {
     width: 100%;
     height: 100%;
-    
+    position: absolute;
 }
 
 .sub_page2 p:nth-of-type(1) {
-    position: absolute;
+    position: relative;
     width: 30%;
-   display: none;
+    top: 55%;
     left: 7%;
-    font-size: 40px;
+    font-size: 30px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .sub_page2 p:nth-of-type(2) {
-    position: absolute;
+    position: relative;
     width: 30%;
-    display: none;
+    top: 55%;
     left: 7%;
-    font-size: 40px;
+    font-size: 30px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -377,59 +381,54 @@ nav {
 
 .sub_page3 {
     width: 100%;
-    height: 55vw;
-    
+    height: 100vw;
 }
 
 .sub_page3 img {
     width: 100%;
     height: 100%;
-    
+    position: absolute;
 }
 
 .sub_page3 p:nth-of-type(1) {
-    position: absolute;
+    position: relative;
     width: 30%;
-    top: 68%;
+    top: 70%;
     left: 7%;
-    font-size: 40px;
+    font-size: 30px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    display: none;
 }
 
 .sub_page3 p:nth-of-type(2) {
-    position: absolute;
+    position: relative;
     width: 30%;
-    top: 75%;
+    top: 70%;
     left: 7%;
-    font-size: 40px;
+    font-size: 30px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    display: none;
 }
 
 /* 외장 디자인 페이지1 */
 
 .sub_design_page1 {
     width: 100%;
-    height: 50vw;
+    height: 140vw;
     background-color: #fff;
     display: flex;
     justify-content: center;
-    align-items: end;
+    align-items: center;
 
 }
 
-
-
 .sub_design_page1 img {
-    width: 80%;
-    height: 90%;
+    width: 90%;
+    height: 70%;
 }
 
 /* 컬러 디자인 페이지 */
 .color_page1 {
     width: 100%;
-    height: 55vw;
+    height: 100vw;
     background-color: #A3B6D2;
     display: flex;
     flex-direction: column;
@@ -437,35 +436,38 @@ nav {
 }
 
 #color img {
-    width: 70%;
-    height: 75%;
+    width: 80%;
+    height: 40%;
     position: absolute;
-    top: 0;
-    left: 30%;
+    top: 45vw;
+    left: 10%;
 
 }
 
 .colorbtn1 {
     width: 80%;
     height: 50px;
-    margin: 30px 140px 0;
+    margin: 15vw 70px 0;
     font-size: 24px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .colorbtn2 {
     width: 60%;
-    margin: 0 140px;
+    margin: 0 70px;
+    
 }
 
 .colorbtn2 li {
-    line-height: 60px;
-    font-size: 28px;
+    line-height: 40px;
+    font-size: 18px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
 }
 
 .colorbtn2 li {
     color: #ddd;
+    z-index: 20;
 }
 
 .colorbtn2 li:hover {
@@ -489,23 +491,23 @@ nav {
 }
 
 #colortext1 {
-    left: 60%;
-    top: 10%;
+    left: 40%;
+    top: 15vw;
 }
 
 #colortext2 {
-    left: 60%;
-    top: 13%;
+    left: 40%;
+    top: 20vw;
 }
 
 /* 실내 페이지 1*/
 
 .inside {
     width: 100%;
-    height: 60vw;
+    height: 140vw;
     background-image: url(../img2/inside.jpg);
     background-repeat: no-repeat;
-    background-position: right top;
+    background-position: center;
     background-attachment: fixed;
     position: relative;
 }
@@ -515,22 +517,22 @@ nav {
     font-size: 18px;
     color: #7c7c7c;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding: 60px 140px 30px;
+    padding: 60px 80px 30px;
 }
 
 .inside p:nth-child(2) {
-    width: 50%;
-    font-size: 42px;
+    width: 60%;
+    font-size: 30px;
     color: #fff;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    padding: 0 140px;
+    padding: 0 80px;
 }
 
 /* <!-- 실내 디자인 페이지2 --> */
 
 .inside2 {
     width: 100%;
-    height: 460vw;
+    height: 700vw;
     background-color: #7c7c7c;
     display: flex;
     position: sticky;
@@ -538,24 +540,25 @@ nav {
 }
 
 .inside_box1 {
-    width: 50%;
+    width: 0%;
     height: auto;
     background-color: black;
+    
 }
 
 .inside_box2 {
-    width: 50%;
+    width: 100%;
     height: auto;
     background-color: black;
+    
+   
 }
 
 .inside_box_item {
     width: 100%;
     height: 10.3%;
-    /* background-color: aquamarine; */
     margin: 30px 0;
-    
-    font-size: 20px;
+    font-size: 16px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -567,7 +570,11 @@ nav {
     position: sticky;
     left: 150px;
     top: 250px;
+    display: none;
 }
+
+
+
 
 .inside_box_item span {
     color:white;
@@ -588,17 +595,17 @@ nav {
 
 /* 퍼포먼스 페이지 */
 
-.pupopage{width: 100%; height: 120vw; }
+.pupopage{width: 100%; height: 240vw; }
 
-.pupo_img{width: 100%; height: 50%;position:relative }
+.pupo_img{width: 100%; height: 50%;position:relative ;}
 
 .pupo_img img{width: 100%; height: 100%; }
 
 .pupo_img p{font-size: 28px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; position: absolute;  left: 5%;}
 
-.pupo_img p:nth-of-type(1){top: 95%; }
+.pupo_img p:nth-of-type(1){top: 90%; }
 
-.pupo_img p:nth-of-type(2){top: 195%;}
+.pupo_img p:nth-of-type(2){top: 190%;}
 
 
 /* 퍼포먼스 페이지2 */
@@ -606,7 +613,7 @@ nav {
 
 .pupopage2{width: 100%; height: 90vw; position: relative; }
 
-.pupopage2 h2{width: 300px; padding:5% 0 2% 5%; font-size: 44px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;} 
+.pupopage2 h2{width: 300px; padding:5% 0 0 10%; font-size: 44px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;} 
 
 .Gallery_img{ width: 100%; height: 80%; display: flex; flex-wrap: wrap; justify-content: center;}
 
@@ -641,7 +648,9 @@ z-index: 12;top: 0; overflow: hidden; display: none; position: fixed;}
 
 .pupopage_pop ul{width: 800%; display: flex;height: 100%; margin: 150px auto;}
 
-.pupopage_pop_img li{width: 100%; height: 100%;}
+.pupopage_pop_img li{width:100%; height: 100%;}
+
+.pupopage_pop_img li img{width: 100%; height: 100%;}
 
 
 .pupopage_pop span{height: 50px; font-size: 38px; color: #fff; position: absolute;
@@ -653,7 +662,7 @@ line-height: 50px; cursor: pointer; background-color: rgba(0,0,0,0.6); }
 
 .next{right: 0; padding: 5px 6px 5px 6px; border-radius: 10px 0 0 10px;top: 43%;} 
 
-.popx{right: 20px; top: 15%; padding: 5px; border-radius: 5px;}
+.popx{right: 20px; top: 5%; padding: 5px; border-radius: 5px; }
 
 
 /* 푸터 페이지 */
@@ -665,7 +674,7 @@ footer {
 #footer_top {
 
     height: 59px;
-    padding: 0 140px;
+    padding: 0 100px;
 }
 
 #footer_top ul li img {
@@ -685,7 +694,7 @@ footer {
 #footer_topsub {
   
     height: 78px;
-    padding: 0 140px;
+    padding: 0 70px;
     display: flex;
     align-items: end;
 }
@@ -701,7 +710,7 @@ footer {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    padding: 0 120px;
+    padding: 0 60px;
 }
 
 .footer_main_item {
@@ -734,27 +743,30 @@ footer {
 
 
 #footer_botton1 {
-
     height: 90px;
-    padding: 0 120px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    padding: 0px 40px;
 }
 
 #footer_botton1 ul {
     display: flex;
+    flex-direction: row;
+    
+    
 }
 
 #footer_botton1 ul li {
-    margin: 0 10px;
+    margin: 0px 5px;
     color: #bbbbbb;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 14px;
+    font-size: 10px;
+   
 }
 
 #footer_botton1 ul li img {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
 }
 
 #footer_botton1 ul li:nth-child(3) {
@@ -771,9 +783,9 @@ footer {
 }
 
 #footer_botton2 {
-
+    padding: 0px 25px;
     height: 90px;
-    padding: 0 120px;
+    margin: 0 0 0 10px;
     display: flex;
     justify-content: space-between;
 }
@@ -786,7 +798,7 @@ footer {
     margin: 0 10px;
     color: #bbbbbb;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 14px;
+    font-size: 10px;
 }
 
 #footer_botton2 ul li:hover {
@@ -815,14 +827,13 @@ footer {
     color: #cccccc;
 }
 
-/* 팝업 창 */
+/* 팝업창 */
 
 #popup {
     width: 100%;
-    height: 1500px;
+    height: 1400px;
     background: black;
     position: absolute;
-    
     top: 0;
     left: 0;
     z-index: 10;
@@ -869,4 +880,6 @@ footer {
 
 #popup_top #icon1:hover {
     cursor: pointer;
+}
+
 }
