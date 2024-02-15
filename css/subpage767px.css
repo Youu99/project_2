@@ -202,11 +202,14 @@
         }
     
         #nav3 ul li {
-            font-size: 3px;
+            font-size: 6px;
             padding: 0 3px;
             color: #7c7c7c;
     
         }
+
+        #nav3 ul li:nth-of-type(3){display: none;}
+
     
         #nav3 ul li:hover {
             color: #fff;
@@ -216,6 +219,7 @@
         .subnav_box1 {
             width: 140px;
             text-align: center;
+            display: none;
         }
     
         #nav3 a {
