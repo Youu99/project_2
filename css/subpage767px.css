@@ -117,7 +117,7 @@
         }
     
         #nav1 img {
-            width: 100%;
+            width: 90%;
             height: 40px;
             padding: 15px 5px;
         }
@@ -202,7 +202,7 @@
         }
     
         #nav3 ul li {
-            font-size: 6px;
+            font-size: 4px;
             padding: 0 3px;
             color: #7c7c7c;
     
@@ -900,7 +900,7 @@
             margin: 0px 2px;
             color: #bbbbbb;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-size: 6px;
+            font-size: 4px;
     
         }
     
@@ -938,7 +938,7 @@
             margin: 0 1px;
             color: #bbbbbb;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-size: 6px;
+            font-size: 4px;
         }
     
         #footer_botton2 ul li:hover {
