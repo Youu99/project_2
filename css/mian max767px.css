@@ -44,7 +44,7 @@
         padding: 0 5px 0;
         position: absolute;
         right: 0;
-        left: 20vw;
+        left: 70vw;
         z-index: 11;
         width: 15px;
     }
@@ -84,7 +84,7 @@
     }
     
     nav {
-        width: 100%;
+        
         height: 69px;
         background-color: black;
         display: flex;
@@ -97,7 +97,7 @@
     }
     
     #nav1 img {
-        width: 100%;
+        width: 90%;
         height: 40px;
         padding: 15px 5px;
     }
@@ -1003,21 +1003,21 @@
     
     footer {
         width: 100%;
-    
+
     }
-    
+
     #footer_top {
-    
+
         height: 59px;
-        padding: 0 15vw;
+        padding: 70px 60px 0;
     }
-    
+
     #footer_top ul li img {
         width: 20px;
         height: 20px;
         margin-top: 5px;
     }
-    
+
     #footer_top ul {
         display: flex;
         width: 10%;
@@ -1025,132 +1025,124 @@
         justify-content: space-around;
         align-items: center;
     }
-    
+
     #footer_topsub {
-      
+
         height: 78px;
-       
+        padding: 0 20px;
         display: flex;
         align-items: end;
-        justify-content: center;
     }
-    
+
     #footer_topsub p {
         color: #ffffff;
-        font-size: 14px;
+        font-size: 10px;
     }
-    
+
     #footer_main {
-    
-        height: 80%;
-       display: flex;
+
+        height: 670px;
+        display: flex;
         justify-content: flex-start;
         flex-wrap: wrap;
-        
+        padding: 0 10px;
     }
-    
+
     .footer_main_item {
         width: 25%;
-        
+
         display: flex;
         box-sizing: border-box;
         padding: 20px;
-        
     }
-    
+
     .footer_main_item ul li:nth-child(1) {
         color: white;
         font-weight: bold;
-        font-size: 14px;
+        font-size: 8px;
     }
 
-  
-    
-    
     .footer_main_item li {
-        margin: 18px 0;
+        margin: 15px 0;
         color: #bbbbbb;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 12px;
+        font-size: 7px;
     }
-    
-    
+
+
     .footer_main_item ul li:hover {
         color: #ffffff;
         cursor: pointer;
     }
-    
-    
-    
+
+
+
     #footer_botton1 {
-    
-        margin: 20px 0;
-       
+        height: 90px;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
+        padding: 0px 0px;
     }
-    
+
     #footer_botton1 ul {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-       
+        flex-direction: row;
+
+
     }
-    
+
     #footer_botton1 ul li {
-        margin: 5px 10px;
+        margin: 0px 2px;
         color: #bbbbbb;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 12px;
+        font-size: 3px;
         display: none;
+
     }
-    
+
     #footer_botton1 ul li img {
-        width: 20px;
-        height: 20px;
+        width: 15px;
+        height: 15px;
         display: none;
     }
-    
+
     #footer_botton1 ul li:nth-child(3) {
         color: #c36f51;
     }
-    
+
     #footer_botton1 ul li:nth-child(3):hover {
         color: #c36f51;
     }
-    
+
     #footer_botton1 ul li:hover {
         cursor: pointer;
         color: white;
     }
-    
+
     #footer_botton2 {
-    
-       
-       
+        padding: 0px 10px;
+        height: 90px;
         display: flex;
         justify-content: space-between;
     }
-    
+
     #footer_botton2 ul {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
     }
-    
+
     #footer_botton2 ul li {
-        margin: 5px 10px;
+        margin: 0 1px;
         color: #bbbbbb;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 12px;
+        font-size: 3px;
         display: none;
     }
-    
+
     #footer_botton2 ul li:hover {
         cursor: pointer;
         color: white;
     }
-    
+
     #footer_last {
         width: 100%;
         height: 203px;
@@ -1158,13 +1150,14 @@
         justify-content: center;
         flex-direction: column;
         align-items: center;
+        
     }
-    
+
     #footer_last img {
         width: 100px;
         height: 40px;
     }
-    
+
     #footer_last p {
         font-size: 14px;
         margin: 15px 0;
