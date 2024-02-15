@@ -202,7 +202,7 @@
         }
     
         #nav3 ul li {
-            font-size: 4px;
+            font-size: 3px;
             padding: 0 3px;
             color: #7c7c7c;
     
@@ -900,7 +900,7 @@
             margin: 0px 2px;
             color: #bbbbbb;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-size: 4px;
+            font-size: 3px;
     
         }
     
@@ -938,7 +938,7 @@
             margin: 0 1px;
             color: #bbbbbb;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-size: 4px;
+            font-size: 3px;
         }
     
         #footer_botton2 ul li:hover {
