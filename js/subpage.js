@@ -149,12 +149,12 @@ $(function () {
 $(function () {
     function prev() {
         $(".popslide li:last").prependTo(".popslide");
-        $(".popslide").css({ marginLeft: -1680 });
+        $(".popslide").css({ marginLeft: "-100%"});
         $(".popslide").stop().animate({ marginLeft: 0 }, 400)
     }
 
     function next() {
-        $(".popslide").stop().animate({ marginLeft: -1680 }, 400, function () {
+        $(".popslide").stop().animate({ marginLeft: "-100%"}, 400, function () {
             $(".popslide li:first").appendTo(".popslide");
             $(".popslide").css({ marginLeft: 0 })
         })
