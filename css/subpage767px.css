@@ -905,6 +905,7 @@
             color: #bbbbbb;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             font-size: 3px;
+            display: none;
     
         }
     
@@ -943,6 +944,7 @@
             color: #bbbbbb;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             font-size: 3px;
+            display: none;
         }
     
         #footer_botton2 ul li:hover {
@@ -957,6 +959,7 @@
             justify-content: center;
             flex-direction: column;
             align-items: center;
+            
         }
     
         #footer_last img {
