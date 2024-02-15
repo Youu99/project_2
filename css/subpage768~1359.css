@@ -237,7 +237,7 @@
 
     .vidio {
         width: 100%;
-        height: 100vw;
+        height: 40vw;
         position: relative;
         overflow: hidden;
     }
@@ -348,7 +348,7 @@
 
     .sub_page2 {
         width: 100%;
-        height: 120vw;
+        height: 80vw;
 
     }
 
@@ -380,7 +380,7 @@
 
     .sub_page3 {
         width: 100%;
-        height: 100vw;
+        height: 80vw;
     }
 
     .sub_page3 img {
@@ -411,7 +411,7 @@
 
     .sub_design_page1 {
         width: 100%;
-        height: 140vw;
+        height: 80vw;
         background-color: #fff;
         display: flex;
         justify-content: center;
