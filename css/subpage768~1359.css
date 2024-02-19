@@ -264,7 +264,7 @@
     .vidio a {
         font-size: 18px;
         position: absolute;
-        width: 10%;
+        width: 20%;
         top: 65%;
         left: 5%;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -283,7 +283,7 @@
     }
 
     .vidio a:hover::after {
-        width: 100%;
+        width: 34%;
     }
 
     /* 개요 서브 페이지1 */
