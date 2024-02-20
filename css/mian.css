@@ -116,13 +116,13 @@ nav {
     padding-right: 10px;
 }
 
-#nav1 li {
+#nav1 li a{
     color: #bbbbbb;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 15px;
 }
 
-#nav1 li:hover {
+#nav1 li a:hover {
     cursor: pointer;
     color: #fff;
 }

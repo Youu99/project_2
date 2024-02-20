@@ -78,10 +78,10 @@ $(function(){
         grabCursor: true,
         centeredSlides: true,
         slidesPerView: "auto",
-        // autoplay: {
-        //     delay: 2500,
-        //     disableOnInteraction: false,
-        //   },
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+          },
           loop: true,
         coverflowEffect: {
           rotate: 50,
